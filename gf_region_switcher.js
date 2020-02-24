@@ -14,10 +14,12 @@ let headers = $request.headers;
 
 headers['Host'] = 'adr.transit.gf.ppgame.com';
 
-let body = $request.body.replace(/channel=cn_appstore/,"channel=cn_mica").replace(/platformChannelId=ios/,"platformChannelId=GWPZ");
+let body = $request.body;
+
+body = body.replace(/channel=cn_appstore/,"channel=cn_mica").replace(/platformChannelId=ios/,"platformChannelId=GWPZ");
 
 $done({
     url: url,
     headers: headers,
-    body: body,
+    body: body
 });
