@@ -10,7 +10,7 @@ let url = $request.url;
 let headers = $request.headers;
 let body = $request.body;
 
-url = url.replace(/ios\.transit\.gf\.ppgame\.com/g,"adr.transit.gf.ppgame.com");
+url = url.replace(/ios\.transit\.gf\.ppgame\.com/,"adr.transit.gf.ppgame.com");
 headers['Host'] = 'adr.transit.gf.ppgame.com';
 body = body.replace(/channel=cn_appstore/,"channel=cn_mica").replace(/platformChannelId=ios/,"platformChannelId=GWPZ");
 
