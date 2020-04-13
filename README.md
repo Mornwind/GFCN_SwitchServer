@@ -17,16 +17,24 @@
 ---
 
 ## 配置信息
-### ① Surge 4 / Loon
+### ⑴ Surge 4 / Loon
+#### ① 订阅模块化配置
+
 ```
-[Script]
-# 少女前线 跨服
-gf_region_switcher.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.js
+https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.sgmodule
 ```
 
-### ② Quantumult X
+#### ② 手动编辑配置
+
+```
+[Script]
+# 少女前线 官服跨服
+gf_region_switcher.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.js,requires-body=1
+```
+
+### ⑵ Quantumult X
 ```
 [rewrite_local]
-# 少女前线 跨服
+# 少女前线 官服跨服
 ^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url script-request-body gf_region_switcher.js
 ```
