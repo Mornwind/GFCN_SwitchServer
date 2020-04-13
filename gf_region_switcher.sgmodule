@@ -1,7 +1,7 @@
-#!name=少女前线 官服跨服
-#!desc=使用 Surge 4 对「少女前线」进行官服跨服。
+#!name=「少女前线」跨服（iOS 端 → 安卓国服）
+#!desc=通过“脚本法”，进行「少女前线」跨服。可在 iOS 端玩安卓国服。
 #!system=ios
 
 [URL Rewrite]
-# 少女前线 官服跨服
+# 少女前线 跨服
 gf_region_switcher.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.js,requires-body=1

@@ -28,13 +28,13 @@ https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_s
 
 ```
 [Script]
-# 少女前线 官服跨服
+# 少女前线 跨服
 gf_region_switcher.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.js,requires-body=1
 ```
 
 ### ⑵ Quantumult X
 ```
 [rewrite_local]
-# 少女前线 官服跨服
+# 少女前线 跨服
 ^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url script-request-body gf_region_switcher.js
 ```
