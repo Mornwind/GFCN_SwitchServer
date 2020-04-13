@@ -21,7 +21,7 @@
 ```
 [Script]
 # 少女前线 跨服
-http-request ^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php requires-body=1,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.js
+gf_region_switcher.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.js
 ```
 
 ### ② Quantumult X
