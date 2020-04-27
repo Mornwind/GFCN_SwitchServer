@@ -10,9 +10,9 @@ let url = $request.url;
 let headers = $request.headers;
 let body = $request.body;
 
-url = url.replace(/ios\.transit\.gf\.ppgame\.com/,"adr.transit.gf.ppgame.com");
-headers['Host'] = 'adr.transit.gf.ppgame.com';
-body = body.replace(/channel=cn_appstore/,"channel=cn_mica").replace(/platformChannelId=ios/,"platformChannelId=GWPZ");
+url = url.replace(/ios\.transit\.gf\.ppgame\.com/,"gfcn-transit.gw.sunborngame.com");
+headers['Host'] = 'gfcn-transit.gw.sunborngame.com';
+body = body.replace(/channel=cn_appstore/,"channel=cn_mica&device=adr").replace(/platformChannelId=ios/,"platformChannelId=GWGW");
 
 $done({
 	url: url,
