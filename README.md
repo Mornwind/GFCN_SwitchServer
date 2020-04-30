@@ -21,7 +21,7 @@
 #### ① 订阅模块化配置
 
 ```
-https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.sgmodule
+https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher_gw.sgmodule
 ```
 
 #### ② 手动编辑配置
@@ -29,12 +29,12 @@ https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_s
 ```
 [Script]
 # 少女前线 跨服
-gf_region_switcher.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher.js,requires-body=1
+gf_region_switcher_gw.js = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher_gw.js,requires-body=1
 ```
 
 ### ⑵ Quantumult X
 ```
 [rewrite_local]
 # 少女前线 跨服
-^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url script-request-body gf_region_switcher.js
+^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body gf_region_switcher_gw.js
 ```
