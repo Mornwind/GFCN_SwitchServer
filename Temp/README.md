@@ -1,4 +1,4 @@
-# 「少女前线」跨服（迁移期临时版）（iOS客户端 → 安卓国服）
+# 「少女前线」跨服（迁移期临时版，已失效）（iOS客户端 → 安卓国服）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
  > GitHub Link: [GF_Region_Switcher](https://github.com/Mornwind/GF_Region_Switcher) 
