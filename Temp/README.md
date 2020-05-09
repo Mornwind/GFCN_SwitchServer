@@ -35,6 +35,7 @@ gfcn_switchserver_gw_temp_C.js = type=http-response,pattern=^http:\/\/gfcn-game\
 ```
 
 ### ⑵ Quantumult X
+#### 本地脚本（商店版、TF 版均可用）
 ```
 [rewrite_local]
 # 少女前线 跨服
@@ -42,4 +43,14 @@ gfcn_switchserver_gw_temp_C.js = type=http-response,pattern=^http:\/\/gfcn-game\
 ^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw_temp_A.js
 ^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body gfcn_switchserver_gw_temp_B.js
 ^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body gfcn_switchserver_gw_temp_C.js
+```
+
+#### 远程脚本（仅 TF 版可用）
+```
+[rewrite_local]
+# 少女前线 跨服
+^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url 307 http://gfcn-transit.gw.sunborngame.com/index.php
+^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_A.js
+^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_B.js
+^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_C.js
 ```

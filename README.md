@@ -33,8 +33,16 @@ gfcn_switchserver_gw.js = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\
 ```
 
 ### ⑵ Quantumult X
+#### 本地脚本（商店版、TF 版均可用）
 ```
 [rewrite_local]
 # 少女前线 跨服
 ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw.js
+```
+
+#### 远程脚本（仅 TF 版可用）
+```
+[rewrite_local]
+# 少女前线 跨服
+^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js
 ```
