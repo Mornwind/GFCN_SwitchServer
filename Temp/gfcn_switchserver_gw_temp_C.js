@@ -3,7 +3,7 @@
 By: Mornwind
 
 README:
-https://github.com/Mornwind/GF_Region_Switcher/blob/master/README.md
+https://github.com/Mornwind/GFCN_SwitchServer/blob/master/README.md
 */
 
 let body = $response.body;

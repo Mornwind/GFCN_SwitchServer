@@ -1,7 +1,7 @@
 # 「少女前线」跨服（迁移期临时版，已失效）（iOS 端 → 安卓官服）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
- > GitHub Link: [GF_Region_Switcher](https://github.com/Mornwind/GF_Region_Switcher) 
+ > GitHub Link: [GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
 
 ## 参考来源
  > ① 霞ヶ丘詩羽x：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
@@ -21,7 +21,7 @@
 #### ① 订阅模块化配置
 
 ```
-https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/Temp/gf_region_switcher_gw_temp.sgmodule
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp.sgmodule
 ```
 
 #### ② 手动编辑配置
@@ -29,9 +29,9 @@ https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/Temp/gf_reg
 ```
 [Script]
 # 少女前线 跨服
-gf_region_switcher_gw_temp_A.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/Temp/gf_region_switcher_gw_temp_A.js,requires-body=1
-gf_region_switcher_gw_temp_B.js = type=http-response,pattern=^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/Temp/gf_region_switcher_gw_temp_B.js,requires-body=1
-gf_region_switcher_gw_temp_C.js = type=http-response,pattern=^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/Temp/gf_region_switcher_gw_temp_C.js,requires-body=1
+gfcn_switchserver_gw_temp_A.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_A.js,requires-body=1
+gfcn_switchserver_gw_temp_B.js = type=http-response,pattern=^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_B.js,requires-body=1
+gfcn_switchserver_gw_temp_C.js = type=http-response,pattern=^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_C.js,requires-body=1
 ```
 
 ### ⑵ Quantumult X
@@ -39,7 +39,7 @@ gf_region_switcher_gw_temp_C.js = type=http-response,pattern=^http:\/\/gfcn-game
 [rewrite_local]
 # 少女前线 跨服
 ^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url 307 http://gfcn-transit.gw.sunborngame.com/index.php
-^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body gf_region_switcher_gw_temp_A.js
-^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body gf_region_switcher_gw_temp_B.js
-^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body gf_region_switcher_gw_temp_C.js
+^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw_temp_A.js
+^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body gfcn_switchserver_gw_temp_B.js
+^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body gfcn_switchserver_gw_temp_C.js
 ```

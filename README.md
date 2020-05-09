@@ -1,7 +1,7 @@
 # 「少女前线」跨服（散爆版）（iOS 端 → 安卓官服）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
- > GitHub Link: [GF_Region_Switcher](https://github.com/Mornwind/GF_Region_Switcher) 
+ > GitHub Link: [GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
 
 ## 参考来源
  > ① 霞ヶ丘詩羽x：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
@@ -21,7 +21,7 @@
 #### ① 订阅模块化配置
 
 ```
-https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher_gw.sgmodule
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.sgmodule
 ```
 
 #### ② 手动编辑配置
@@ -29,12 +29,12 @@ https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_s
 ```
 [Script]
 # 少女前线 跨服
-gf_region_switcher_gw.js = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GF_Region_Switcher/master/gf_region_switcher_gw.js,requires-body=1
+gfcn_switchserver_gw.js = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,requires-body=1
 ```
 
 ### ⑵ Quantumult X
 ```
 [rewrite_local]
 # 少女前线 跨服
-^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body gf_region_switcher_gw.js
+^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw.js
 ```
