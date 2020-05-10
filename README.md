@@ -16,23 +16,31 @@
 
 ---
 
-## 配置信息
-### ⑴ Surge 4 / Loon
-#### ① 订阅模块化配置
+## 配置方法
+### ⑴ HTTP Catcher
+```
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.hcc
+```
 
+### ⑵ Thor
+```
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.f4thor
+```
+
+### ⑶ Surge 4 / Loon
+#### ① 订阅模块化配置
 ```
 https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.sgmodule
 ```
 
 #### ② 手动编辑配置
-
 ```
 [Script]
 # 少女前线 跨服
 gfcn_switchserver_gw.js = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,requires-body=1
 ```
 
-### ⑵ Quantumult X
+### ⑷ Quantumult X
 #### 本地脚本（商店版、TF 版均可用）
 ```
 [rewrite_local]

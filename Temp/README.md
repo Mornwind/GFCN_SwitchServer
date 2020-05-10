@@ -19,13 +19,11 @@
 ## 配置信息
 ### ⑴ Surge 4 / Loon
 #### ① 订阅模块化配置
-
 ```
 https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp.sgmodule
 ```
 
 #### ② 手动编辑配置
-
 ```
 [Script]
 # 少女前线 跨服
