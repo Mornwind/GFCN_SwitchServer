@@ -1,10 +1,11 @@
 # 「少女前线」跨服（散爆版）（iOS 端 → 安卓官服）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
- > GitHub Link: [GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
+ > GitHub Link: [Mornwind/GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
 
-## 参考来源
- > ① 霞ヶ丘詩羽x：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
+## 致谢
+- **参考&协助**
+  - 霞ヶ丘詩羽x：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
 
 ---
 
@@ -41,14 +42,14 @@ gfcn_switchserver_gw.js = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\
 ```
 
 ### ⑷ Quantumult X
-#### 本地脚本（商店版、TF 版均可用）
+#### ① 本地脚本（商店版、TF 版均可用）
 ```
 [rewrite_local]
 # 少女前线 跨服
 ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw.js
 ```
 
-#### 远程脚本（仅 TF 版可用）
+#### ② 远程脚本（仅 TF 版可用）
 ```
 [rewrite_local]
 # 少女前线 跨服
