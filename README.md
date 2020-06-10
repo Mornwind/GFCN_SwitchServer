@@ -135,7 +135,16 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 ### A-2 类型
  > A-2：通过**使用他人提供的代理服务器**，**在远端重写客户端请求**，**直接**实现跨服。
 
-待补充。
+#### ⑴ WiFi 下设置自动代理（不推荐）
+ > 此方法由 霞ヶ丘詩羽x 提供。
+1. **设置 WiFi 代理模式**：点击自己的 WiFi 右侧的ⓘ，点最下方的“配置代理”，选择“自动”。
+2. **设置自动代理的 PAC**：在“URL”一栏中，填入下面的 URL，然后点击右上角“存储”。
+
+```
+https://gitee.com/silvercrowsaki/codes/pd7eu9g14823hxq50fkvm34/raw?blob_name=GFServerTransfer.pac
+```
+
+3. **登录游戏**：登录游戏，即可跨服。
 
 ### B 类型（未提供）
  > B-1：通过**对游戏客户端修改后重新打包**，**由他人统一签名后在线下载安装**，**直接**实现跨服。
