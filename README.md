@@ -5,7 +5,7 @@
 
 ## 致谢
 - **参考&协助**
-  - 霞ヶ丘詩羽x：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
+  - [霞ヶ丘詩羽x](https://space.bilibili.com/455501)：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
 
 ---
 
@@ -177,7 +177,7 @@
  > A-2：通过**使用他人提供的代理服务器**，**在远端重写客户端请求**，**直接**实现跨服。
 
 #### ⑴ WiFi 下设置自动代理（不推荐）
- > 此方法由 霞ヶ丘詩羽x 提供。
+ > 此方法由 [霞ヶ丘詩羽x](https://space.bilibili.com/455501) 提供。
 
 <details>
 <summary>点击查看：配置方法</summary>
