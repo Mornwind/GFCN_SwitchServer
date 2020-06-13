@@ -32,7 +32,7 @@
 ## A-1 类型
  > A-1：通过**使用网络调试工具**，**在本地重写客户端请求**，**直接**实现跨服。
 
-| 图标 | 跨服工具 | 别名 | 跨服教程与配置 |
+| 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
 | :-: | :-: | :-: | :-: |
 | ![](/Icon/HTTP_Catcher_Icon.png) | HTTP Catcher | 网球 | [文字教程](#-http-catcher) |
 | ![](/Icon/iHTTP_Tracker_Icon.png) | iHTTP Tracker | 猫头鹰 | [文字教程](#-ihttp-tracker) |
@@ -178,7 +178,7 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 ## C-1 类型
  > C-1：通过**使用云游戏平台**，**将游戏画面实时传输至移动设备**，**间接**实现跨服。
 
-| 图标 | 跨服工具 | 别名 | 跨服教程与配置 |
+| 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
 | :-: | :-: | :-: | :-: |
 | - | 网易云游戏 | - | 见网易云游戏官网 |
 
@@ -209,3 +209,20 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
   - Quantumult X：<https://apps.apple.com/app/id1443988620>
   - Surge 4：<https://apps.apple.com/app/id1442620678>
   - Loon：<https://apps.apple.com/app/id1373567447>
+
+## 附录2：「少女前线」国服客户端登录参数
+ > 以下为分别连接不同的国服服务器时，有效的客户端登录参数。
+
+### 官服
+
+| 服务器\参数 | Host | `channel` | `device` | `platformChannelId` |
+| :-: | :-: | :-: | :-: | :-: |
+| 安卓官服 | ⋯`.gw.`⋯ | `cn_mica` | `adr` | `GWGW` / `TapTap` |
+| iOS 官服 | ⋯`.ios.`⋯ | `cn_appstore` | `ios` | `ios` |
+
+### 渠道服
+
+| 服务器\参数 | Host | `channel` | `device` | `platformChannelId` |
+| :-: | :-: | :-: | :-: | :-: |
+| Bilibili 服 | ⋯`.bili.`⋯ | `cn_bili` | `adr` | `Bili` |
+| 渠道混服 | ⋯`.ly.`⋯ | `cn_third` | `adr` | （多种） |
