@@ -215,14 +215,14 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 
 ### 官服
 
-| 服务器\参数 | Host | `channel` | `device` | `platformChannelId` |
+| 服务器 \ 参数 | URL / Host | Request Body<br/>`channel` | Request Body<br/>`device` | Request Body<br/>`platformChannelId` |
 | :-: | :-: | :-: | :-: | :-: |
-| 安卓官服 | ⋯`.gw.`⋯ | `cn_mica` | `adr` | `GWGW` / `TapTap` |
+| 安卓官服 | ⋯`.gw.`⋯ | `cn_mica` | `adr` | `GWGW`<br/>`TapTap` |
 | iOS 官服 | ⋯`.ios.`⋯ | `cn_appstore` | `ios` | `ios` |
 
 ### 渠道服
 
-| 服务器\参数 | Host | `channel` | `device` | `platformChannelId` |
+| 服务器 \ 参数 | URL / Host | Request Body<br/>`channel` | Request Body<br/>`device` | Request Body<br/>`platformChannelId` |
 | :-: | :-: | :-: | :-: | :-: |
 | Bilibili 服 | ⋯`.bili.`⋯ | `cn_bili` | `adr` | `Bili` |
-| 渠道混服 | ⋯`.ly.`⋯ | `cn_third` | `adr` | （多种） |
+| 渠道混服 | ⋯`.ly.`⋯ | `cn_third` | `adr` | `GWHF` |
