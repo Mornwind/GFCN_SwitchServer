@@ -135,7 +135,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 ```
 [Script]
 # 少女前线 跨服
-gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,timeout=10,enable=true
+gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
@@ -197,7 +197,7 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 </details>
 
 ### ⑺ Loon
- > 参考方法 [⑸ Surge 4](#-surge-4)，此处略去。
+ > 参考方法 [⑹ Surge 4](#-surge-4)，此处略去。
 
 ## A-2 类型（未提供）
  > A-2：通过**使用他人提供的代理服务器**，**在远端重写客户端请求**，**直接**实现跨服。
