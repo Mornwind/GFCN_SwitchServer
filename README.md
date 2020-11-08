@@ -37,15 +37,17 @@
 | ![](/Icon/HTTP_Catcher_Icon.png) | HTTP Catcher | 网球 | [文字教程](#-http-catcher) |
 | ![](/Icon/iHTTP_Tracker_Icon.png) | iHTTP Tracker | 猫头鹰 | [文字教程](#-ihttp-tracker) |
 | ![](/Icon/Thor_Icon.png) | Thor | 锤子 | [文字教程](#-thor) |
+| ![](/Icon/Shadowrocket_Icon.png) | Shadowrocket | 小火箭 | [文字教程](#-shadowrocket) |
 | ![](/Icon/Quantumult_X_Icon.png) | Quantumult X | 圈叉 | [文字教程](#-quantumult-x) |
 | ![](/Icon/Surge_4_Icon.png) | Surge 4 | - | [文字教程](#-surge-4) |
 | ![](/Icon/Loon_Icon.png) | Loon | 气球 | 参考 Surge 4 |
 
 | 跨服工具 | 国区商店<br/>购买与下载 | 正规渠道价格 | 跨服操作<br/>方便程度 | 设备上同时<br/>挂梯与跨服 | 备注 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| HTTP Catcher<br/>（网球） | ✅ | ¥28.00（内购）<br/>\$3.99（内购） | ★★★★ | ❌ | 3.0 版正在开发中 |
+| HTTP Catcher<br/>（网球） | ✅ | ¥28.00（内购）<br/>\$3.99（内购） | ★★★★ | ❌ |  |
 | iHTTP Tracker<br/>（猫头鹰） | ❌ | ¥18.00<br/>\$2.99 | ★★★★ | ❌ | 有 Bug 尚未解决，暂不可用 |
 | Thor<br/>（锤子） | ✅ | ¥88.00<br/>\$12.99 | ★★★★ | ❌ |  |
+| Shadowrocket<br/>（小火箭） | ❌ | \$2.99 | ★★★★ | ✅ |  |
 | Quantumult X<br/>（圈叉） | ❌ | \$7.99 | ★★ | ✅ | TF 名额已满 |
 | Surge 4 | ❌ | \$49.99（首次内购）<br/>+ \$14.99/y（订阅） | ★★ | ✅ |  |
 | Loon<br/>（气球） | ❌ | \$2.99 | ★★ | ✅ | Bug 较多 |
@@ -106,7 +108,41 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 
 </details>
 
-### ⑷ Quantumult X
+### ⑷ Shadowrocket
+ > 一定要是 Shadowrocket 的 2.1.62 (1118) 及以上 TF 或商店版本，因为新版本中才有跨服所需的脚本功能。
+
+<details>
+<summary>点击查看：配置方法</summary>
+
+##### 方法一：直接订阅简易跨服配置
+
+1. **新建本机节点**：在首页，点击右上角“+”，添加一个类型为“HTTP”（或“HTTPS”）、地址为“localhost”（或“127.0.0.1”）、端口为“1080”（或其他在 1-65535 之间的端口）的节点，然后在首页的“服务器节点”中选中该节点。
+2. **设置路由模式**：将“全局路由”设置为“直连”。
+3. **设置远程订阅 URL**：在“配置文件”页面，点击右上角“+”，输入下面的远程订阅 URL，点击下载。
+
+```
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.conf
+```
+
+4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
+5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Shadowrocket 的连接。）
+
+##### 方法二：手动写入当前使用中配置
+
+1. **进入配置编辑界面**：在“配置文件”页面，从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑纯文本”。
+2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“保存”，返回 Shadowrocket 的首页。
+
+```
+[Script]
+# 少女前线 跨服
+gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,timeout=10,enable=true
+```
+
+3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
+
+</details>
+
+### ⑸ Quantumult X
 
 <details>
 <summary>点击查看：配置方法</summary>
@@ -129,7 +165,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 
 </details>
 
-### ⑸ Surge 4
+### ⑹ Surge 4
 
 <details>
 <summary>点击查看：配置方法</summary>
@@ -160,7 +196,7 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 
 </details>
 
-### ⑹ Loon
+### ⑺ Loon
  > 参考方法 [⑸ Surge 4](#-surge-4)，此处略去。
 
 ## A-2 类型（未提供）
