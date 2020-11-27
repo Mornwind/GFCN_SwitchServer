@@ -110,9 +110,11 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 
 ### ⑷ Shadowrocket
  > 一定要是 Shadowrocket 的 2.1.62 (1118) 及以上 TF 或商店版本，因为新版本中才有跨服所需的脚本功能。
+ > 
+ > 另外，因为 2.1.67 (1156) 版本修复了一个 Bug，使得跨服以此版本为界，分为新旧两种。强烈建议更新到 2.1.67 (1156) 版本以上。
 
 <details>
-<summary>点击查看：配置方法</summary>
+<summary>点击查看：新配置方法（适用于 2.1.67 (1156) 及以上版本）</summary>
 
 ##### 方法一：直接订阅简易跨服配置
 
@@ -136,6 +138,37 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 [Script]
 # 少女前线 跨服
 gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+```
+
+3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
+
+</details>
+
+<details>
+<summary>点击查看：旧配置方法（适用于 2.1.62 (1118) ～ 2.1.67 (1155) 版本）</summary>
+
+##### 方法一：直接订阅简易跨服配置
+
+1. **新建本机节点**：在首页，点击右上角“+”，添加一个类型为“HTTP”（或“HTTPS”）、地址为“localhost”（或“127.0.0.1”）、端口为“1080”（或其他在 1-65535 之间的端口）的节点，然后在首页的“服务器节点”中选中该节点。
+2. **设置路由模式**：将“全局路由”设置为“直连”。
+3. **设置远程订阅 URL**：在“配置文件”页面，点击右上角“+”，输入下面的远程订阅 URL，点击下载。
+
+```
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw_old.conf
+```
+
+4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
+5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Shadowrocket 的连接。）
+
+##### 方法二：手动写入当前使用中配置
+
+1. **进入配置编辑界面**：在“配置文件”页面，从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑纯文本”。
+2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“保存”，返回 Shadowrocket 的首页。
+
+```
+[Script]
+# 少女前线 跨服
+gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
