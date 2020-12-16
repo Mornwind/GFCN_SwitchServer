@@ -234,6 +234,30 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 <details>
 <summary>点击查看：配置方法</summary>
 
+#### 方法一：直接下载简易跨服配置
+
+1. **进入“从 URL 下载”页面**：点击下方的“配置”，然后翻到最下面“编辑”部分，点击“从 URL 下载”。
+2. **从 URL 下载配置**：在弹出的“从 URL 下载”页面中，点击最上方的“添加”。然后在弹出的对话框中，将下方的 URL 复制进去，并点击“确定”。接下来弹出的两个提示对话框“发现一个配置文件，是否解析并替换当前配置？”及“解析配置文件成功”，都选择“确定”。然后返回首页“仪表”页。
+
+```
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Loon/gfcn_switchserver_gw.conf
+```
+
+3. **启动 Loon**：点击 Loon 首页”仪表“页右上角的“启动“开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Loon 的连接。）
+
+#### 方法二：手动写入当前使用中配置
+
+1. **进入配置编辑界面**：点击下方的“配置”，然后翻到最下面“编辑”部分，点击“文本编辑”。
+2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“完成”，然后返回首页“仪表”页。
+
+```
+[Script]
+# 少女前线 跨服
+http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Loon/gfcn_switchserver_gw.js, requires-body=true, tag=gfcn_switchserver_gw
+```
+
+3. **启用“脚本”功能**：在“仪表”页面中，找到“脚本”卡片，打开“脚本”功能的开关。（若未找到，点击功能卡片下方的“快捷方式”，将“脚本”设置为可见即可）
+4. **重启 Loon**：为确保修改生效，可以开关一次 Loon 右上角的“启动”开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
 
 </details>
 
