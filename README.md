@@ -40,7 +40,7 @@
 | ![](/Icon/Shadowrocket_Icon.png) | Shadowrocket | 小火箭 | [文字教程](#-shadowrocket) |
 | ![](/Icon/Quantumult_X_Icon.png) | Quantumult X | 圈叉 | [文字教程](#-quantumult-x) |
 | ![](/Icon/Surge_4_Icon.png) | Surge 4 | - | [文字教程](#-surge-4) |
-| ![](/Icon/Loon_Icon.png) | Loon | 气球 | 参考 Surge 4 |
+| ![](/Icon/Loon_Icon.png) | Loon | 气球 | [文字教程](#-loon) |
 
 | 跨服工具 | 国区商店<br/>购买与下载 | 正规渠道价格 | 跨服操作<br/>方便程度 | 设备上同时<br/>挂梯与跨服 | 备注 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -54,7 +54,7 @@
 
  > 注：
  > 
- > 世界蛇⟡崩3少前跨服 - QQ 群：[`915089623`](https://jq.qq.com/?_wv=1027&k=5rnvPAT)
+ > 世界蛇⟡少前跨服 - QQ 群：[`915089623`](https://jq.qq.com/?_wv=1027&k=5rnvPAT)
 
 ### ⑴ HTTP Catcher
 
@@ -64,7 +64,7 @@
 1. **下载并导入跨服配置文件**：下载下面的“.hcc”类型的跨服配置文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘HTTP Catcher’”；在 HTTP Catcher 中弹出的“导入”对话框中选择“好的”，即可成功导入。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.hcc
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher/gfcn_switchserver_gw.hcc
 ```
 
 2. **启用跨服配置**：进入“更多”→“重写”，在弹出的“重写列表”界面中，点击下面的跨服配置使其前面出现“✓”。
@@ -83,7 +83,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 1. **下载并导入跨服配置文件**：下载下面的“.cs5”类型的跨服配置文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后分享到“iHTTP Tracker”；在 iHTTP Tracker 中弹出的“检测到导入重写规则”对话框中选择“导入”，即可成功导入。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.cs5
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/iHTTP_Tracker/gfcn_switchserver_gw.cs5
 ```
 
 2. **启用跨服配置**：进入“设置”→“规则列表”，在“重写”页面中，确保刚刚导入的跨服配置的开关已打开；然后返回“设置”页面。
@@ -100,7 +100,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 1. **下载并导入跨服配置文件**：下载下面的“.f4thor”类型的跨服配置（过滤器）文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘Thor’”；在弹出的跨服配置（过滤器）预览页面中，点击右上角导出图标，在弹出的菜单中选择“装载”，在弹出的“安全提醒”对话框中选择“继续”，即可成功导入；然后点击左上角的“✗”，回到首页。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.f4thor
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_switchserver_gw.f4thor
 ```
 
 2. **选中跨服所用过滤器**：点击闪电按钮上方显示的过滤器名称，在弹出的“过滤器”列表中，点击刚刚导入的跨服所用过滤器，然后会自动返回首页。
@@ -123,7 +123,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 3. **设置远程订阅 URL**：在“配置文件”页面，点击右上角“+”，输入下面的远程订阅 URL，点击下载。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.conf
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_gw.conf
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
@@ -137,7 +137,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 ```
 [Script]
 # 少女前线 跨服
-gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
@@ -154,7 +154,7 @@ gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubuserconte
 3. **设置远程订阅 URL**：在“配置文件”页面，点击右上角“+”，输入下面的远程订阅 URL，点击下载。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw_old.conf
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_gw_old.conf
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
@@ -168,7 +168,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 ```
 [Script]
 # 少女前线 跨服
-gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
@@ -193,7 +193,7 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 ```
 [rewrite_local]
 # 少女前线 跨服
-^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js
+^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Quantumult_X/gfcn_switchserver_gw.js
 ```
 
 </details>
@@ -207,7 +207,7 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 1. **安装并启用跨服配置模块**：在“首页”中找到“模块”卡片（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见），点击“模块”，在弹出的“模块”界面中，找到“安装的模块”部分，点击“安装新模块...”，然后在弹出的“安装模块”对话框中输入下面的 URL 地址，点“好的”下载模块文件。然后在弹出的配置预览窗口中，**检查有无恶意内容并仔细阅读最下方的“警告”**，在确认无误后，点击最下方的“安装”。回到“模块”界面，即可看到跨服配置模块已成功安装，左侧有“✓”表示该模块已启用。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.sgmodule
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_switchserver_gw.sgmodule
 ```
 
 2. **启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。
@@ -220,7 +220,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchs
 ```
 [Script]
 # 少女前线 跨服
-gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/gfcn_switchserver_gw.js,requires-body=1
+gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_switchserver_gw.js,requires-body=1
 ```
 
 2. **启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。
@@ -230,7 +230,12 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 </details>
 
 ### ⑺ Loon
- > 参考方法 [⑹ Surge 4](#-surge-4)，此处略去。
+
+<details>
+<summary>点击查看：配置方法</summary>
+
+
+</details>
 
 ## A-2 类型（未提供）
  > A-2：通过**使用他人提供的代理服务器**，**在远端重写客户端请求**，**直接**实现跨服。
