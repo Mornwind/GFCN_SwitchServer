@@ -38,9 +38,9 @@
 
 ## 跨服手册（iOS 端 → 安卓官服/安卓B服）
 
-iOS 端 → 安卓官服：[点此跳转](/README_GW.md)
+- iOS 端 → 安卓官服：[点此跳转](/README_GW.md)
 
-iOS 端 → 安卓B服：[点此跳转](/README_Bili.md)
+- iOS 端 → 安卓B服：[点此跳转](/README_Bili.md)
 
 ---
 
