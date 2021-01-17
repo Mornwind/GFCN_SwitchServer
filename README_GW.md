@@ -24,7 +24,7 @@
 ## 跨服手册
  > 常见的游戏跨服方式分类，详见[前言](/README.md#ios-端常见跨服方式)部分。
 
-## A-1 类型
+### A-1 类型
  > A-1：通过**使用网络调试工具**，**在本地重写客户端请求**，**直接**实现跨服。
 
 | 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
@@ -47,7 +47,7 @@
 | Surge 4 | ❌ | \$49.99（首次内购）<br/>+ \$14.99/y（订阅） | ★★ | ✅ | 是真的贵 |
 | Loon<br/>（气球） | ❌ | \$2.99 | ★★ | ✅ | Bug 较多 |
 
-### ⑴ HTTP Catcher
+#### ⑴ HTTP Catcher
 
 <details>
 <summary>点击查看：配置方法</summary>
@@ -65,7 +65,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher
 
 </details>
 
-### ⑵ iHTTP Tracker
+#### ⑵ iHTTP Tracker
  > 有 Bug 尚未解决，暂不可用。
 
 <details>
@@ -83,7 +83,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/iHTTP_Tracke
 
 </details>
 
-### ⑶ Thor
+#### ⑶ Thor
 
 <details>
 <summary>点击查看：配置方法</summary>
@@ -99,7 +99,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_sw
 
 </details>
 
-### ⑷ Shadowrocket
+#### ⑷ Shadowrocket
  > 一定要是 Shadowrocket 的 2.1.62 (1118) 及以上 TF 或商店版本，因为新版本中才有跨服所需的脚本功能。
  > 
  > 另外，因为 2.1.67 (1156) 版本修复了一个 Bug，使得跨服以此版本为界，分为新旧两种。强烈建议更新到 2.1.67 (1156) 版本以上。
@@ -107,7 +107,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_sw
 <details>
 <summary>点击查看：新配置方法（适用于 2.1.67 (1156) 及以上版本）</summary>
 
-#### 方法一：直接订阅简易跨服配置
+##### 方法一：直接订阅简易跨服配置
 
 1. **新建本机节点**：在首页，点击右上角“+”，添加一个类型为“HTTP”（或“HTTPS”）、地址为“localhost”（或“127.0.0.1”）、端口为“1080”（或其他在 1-65535 之间的端口）的节点，然后在首页的“服务器节点”中选中该节点。
 2. **设置路由模式**：将“全局路由”设置为“直连”。
@@ -120,7 +120,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
 5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Shadowrocket 的连接。）
 
-#### 方法二：手动写入当前使用中配置
+##### 方法二：手动写入当前使用中配置
 
 1. **进入配置编辑界面**：在“配置文件”页面，从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑纯文本”。
 2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“保存”，返回 Shadowrocket 的首页。
@@ -138,7 +138,7 @@ gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubuserconte
 <details>
 <summary>点击查看：旧配置方法（适用于 2.1.62 (1118) ～ 2.1.67 (1155) 版本）</summary>
 
-#### 方法一：直接订阅简易跨服配置
+##### 方法一：直接订阅简易跨服配置
 
 1. **新建本机节点**：在首页，点击右上角“+”，添加一个类型为“HTTP”（或“HTTPS”）、地址为“localhost”（或“127.0.0.1”）、端口为“1080”（或其他在 1-65535 之间的端口）的节点，然后在首页的“服务器节点”中选中该节点。
 2. **设置路由模式**：将“全局路由”设置为“直连”。
@@ -151,7 +151,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
 5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Shadowrocket 的连接。）
 
-#### 方法二：手动写入当前使用中配置
+##### 方法二：手动写入当前使用中配置
 
 1. **进入配置编辑界面**：在“配置文件”页面，从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑纯文本”。
 2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“保存”，返回 Shadowrocket 的首页。
@@ -166,12 +166,12 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 
 </details>
 
-### ⑸ Quantumult X
+#### ⑸ Quantumult X
 
 <details>
 <summary>点击查看：配置方法</summary>
 
-#### 方法一：本地脚本（商店版、TF 版均可用）
+##### 方法一：本地脚本（商店版、TF 版均可用）
 
 ```
 [rewrite_local]
@@ -179,7 +179,7 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw.js
 ```
 
-#### 方法二：远程脚本（仅 TF 版可用）
+##### 方法二：远程脚本（仅 TF 版可用）
 
 ```
 [rewrite_local]
@@ -189,12 +189,12 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 
 </details>
 
-### ⑹ Surge 4
+#### ⑹ Surge 4
 
 <details>
 <summary>点击查看：配置方法</summary>
 
-#### 方法一：订阅模块化配置
+##### 方法一：订阅模块化配置
 
 1. **安装并启用跨服配置模块**：在“首页”中找到“模块”卡片（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见），点击“模块”，在弹出的“模块”界面中，找到“安装的模块”部分，点击“安装新模块...”，然后在弹出的“安装模块”对话框中输入下面的 URL 地址，点“好的”下载模块文件。然后在弹出的配置预览窗口中，**检查有无恶意内容并仔细阅读最下方的“警告”**，在确认无误后，点击最下方的“安装”。回到“模块”界面，即可看到跨服配置模块已成功安装，左侧有“✓”表示该模块已启用。
 
@@ -206,7 +206,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn
 3. **启用“始终开启”功能**：在“更多”→“设置”→“始终开启”中，打开“自动启动 Surge”的开关，即可保持 Surge 4 一直后台开启。
 4. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可在 iOS 端跨服登录安卓国服。
 
-#### 方法二：手动编辑配置
+##### 方法二：手动编辑配置
 
 1. **手动添加跨服配置**：点击“首页”左上角配置名，在弹出的“配置列表”窗口中，点击“在文本模式中编辑”（或是使用任一款编辑器打开你的 Surge 配置文件（.conf）直接进行编辑）。在编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角“完成”保存修改。
 
@@ -222,12 +222,12 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 
 </details>
 
-### ⑺ Loon
+#### ⑺ Loon
 
 <details>
 <summary>点击查看：配置方法</summary>
 
-#### 方法一：直接下载简易跨服配置
+##### 方法一：直接下载简易跨服配置
 
 1. **进入“从 URL 下载”页面**：点击下方的“配置”，然后翻到最下面“编辑”部分，点击“从 URL 下载”。
 2. **从 URL 下载配置**：在弹出的“从 URL 下载”页面中，点击最上方的“添加”。然后在弹出的对话框中，将下方的 URL 复制进去，并点击“确定”。接下来弹出的两个提示对话框“发现一个配置文件，是否解析并替换当前配置？”及“解析配置文件成功”，都选择“确定”。然后返回 Loon 的首页“仪表”页 。
@@ -238,7 +238,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Loon/gfcn_sw
 
 3. **启动 Loon**：点击 Loon 首页”仪表“页右上角的“启动“开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Loon 的连接。）
 
-#### 方法二：手动写入当前使用中配置
+##### 方法二：手动写入当前使用中配置
 
 1. **进入配置编辑界面**：点击下方的“配置”，然后翻到最下面“编辑”部分，点击“文本编辑”。
 2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“完成”，然后返回首页“仪表”页。
@@ -254,19 +254,19 @@ http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-pa
 
 </details>
 
-## A-2 类型（未提供）
+### A-2 类型（未提供）
  > A-2：通过**使用他人提供的代理服务器**，**在远端重写客户端请求**，**直接**实现跨服。
 
 暂不提供此方式为「少女前线」进行跨服，因为使用代理服务器会受多种因素影响，造成跨服不稳定。
 
-## B 类型（未提供）
+### B 类型（未提供）
  > B-1：通过**对游戏客户端修改后重新打包**，**由他人统一签名后在线下载安装**，**直接**实现跨服。
  > 
  > B-2：通过**对游戏客户端修改后重新打包**，**自行签名然后越狱安装或侧载**，**直接**实现跨服。
 
 不提供此方式为「少女前线」进行跨服，因为修改客户端容易被封号。
 
-## C-1 类型
+### C-1 类型
  > C-1：通过**使用云游戏平台**，**将游戏画面实时传输至移动设备**，**间接**实现跨服。
 
 | 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
@@ -281,9 +281,11 @@ http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-pa
  > 
  > 网易云游戏 - 官网：<https://cg.163.com>
 
-## C-2 类型
+### C-2 类型
  > C-2：通过**使用云主机**，**将游戏画面实时传输至移动设备**，**间接**实现跨服。
 
 此方法需自行摸索。
+
+---
 
 [返回前言](/README.md)
