@@ -1,5 +1,5 @@
 /*
-「少女前线」跨服（iOS 端 → 安卓B服）
+「少女前线」跨服（iOS 端 → Bilibili 服）
 By: Mornwind
 
 README:

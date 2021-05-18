@@ -16,8 +16,7 @@
 
 1. 本项目内所提到的所有客户端与服务器，均为**国服**。
 2. 跨服脚本中**并未含有**用于修改游戏内数据以获得不正当收益的作弊内容，只是用来切换服务器，故理论上不会被封号。跨服脚本代码**公开透明**地存放于本项目中，欢迎随时进行检查。如若不放心，还请另寻他法。
-3. **无法在 iOS 端进行跨服充值，否则 1000% 会错充进 iOS 服，切记！**
-4. iOS 端跨其他安卓渠道服的可参照安卓 B 服的跨服方法。
+3. **无法在 iOS 端进行跨服充值，否则 1000% 会错充进 iOS 官服，切记！**
 
 ---
 
@@ -37,6 +36,9 @@
 | ![](/Icon/Surge_4_Icon.png) | Surge 4 | - | [文字教程](#-surge-4) |
 | ![](/Icon/Loon_Icon.png) | Loon | 气球 | [文字教程](#-loon) |
 
+<details>
+<summary>点击查看：常用**网络调试工具**的对比</summary>
+
 | 跨服工具 | 国区商店<br/>购买与下载 | 正规渠道价格 | 跨服操作<br/>方便程度 | 设备上同时<br/>挂梯与跨服 | 备注 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | HTTP Catcher<br/>（网球） | ✅ | ¥28.00（内购）<br/>\$3.99（内购） | ★★★★ | ❌ |  |
@@ -46,6 +48,8 @@
 | Quantumult X<br/>（圈叉） | ❌ | \$7.99 | ★★ | ✅ | TF 名额已满 |
 | Surge 4 | ❌ | \$49.99（首次内购）<br/>+ \$14.99/y（订阅） | ★★ | ✅ | 是真的贵 |
 | Loon<br/>（气球） | ❌ | \$2.99 | ★★ | ✅ | Bug 较多 |
+
+</details>
 
 #### ⑴ HTTP Catcher
 
@@ -127,7 +131,8 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket
 
 ```
 [Script]
-# 少女前线 跨服
+# 少女前线 跨安卓官服
+## 切换服务器
 gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
@@ -158,7 +163,8 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket
 
 ```
 [Script]
-# 少女前线 跨服
+# 少女前线 跨安卓官服
+## 切换服务器
 gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
@@ -175,7 +181,8 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 
 ```
 [rewrite_local]
-# 少女前线 跨服
+# 少女前线 跨安卓官服
+## 切换服务器
 ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw.js
 ```
 
@@ -183,7 +190,8 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 
 ```
 [rewrite_local]
-# 少女前线 跨服
+# 少女前线 跨安卓官服
+## 切换服务器
 ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Quantumult_X/gfcn_switchserver_gw.js
 ```
 
@@ -212,7 +220,8 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn
 
 ```
 [Script]
-# 少女前线 跨服
+# 少女前线 跨安卓官服
+## 切换服务器
 gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_switchserver_gw.js,requires-body=1
 ```
 
@@ -245,7 +254,8 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Loon/gfcn_sw
 
 ```
 [Script]
-# 少女前线 跨服
+# 少女前线 跨安卓官服
+## 切换服务器
 http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Loon/gfcn_switchserver_gw.js, requires-body=true, tag=gfcn_switchserver_gw
 ```
 
