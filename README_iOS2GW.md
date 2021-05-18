@@ -54,7 +54,7 @@
 #### ⑴ HTTP Catcher
 
 <details>
-<summary>点击查看：配置方法</summary>
+<summary>点击查看：配置跨服</summary>
 
 1. **下载并导入跨服配置文件**：下载下面的“.hcc”类型的跨服配置文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘HTTP Catcher’”；在 HTTP Catcher 中弹出的“导入”对话框中选择“好的”，即可成功导入。
 
@@ -73,7 +73,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher
  > 有 Bug 尚未解决，暂不可用。
 
 <details>
-<summary>点击查看：配置方法（暂不可用）</summary>
+<summary>点击查看：配置跨服（暂不可用）</summary>
 
 1. **下载并导入跨服配置文件**：下载下面的“.cs5”类型的跨服配置文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后分享到“iHTTP Tracker”；在 iHTTP Tracker 中弹出的“检测到导入重写规则”对话框中选择“导入”，即可成功导入。
 
@@ -90,7 +90,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/iHTTP_Tracke
 #### ⑶ Thor
 
 <details>
-<summary>点击查看：配置方法</summary>
+<summary>点击查看：配置跨服</summary>
 
 1. **下载并导入跨服配置文件**：下载下面的“.f4thor”类型的跨服配置（过滤器）文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘Thor’”；在弹出的跨服配置（过滤器）预览页面中，点击右上角导出图标，在弹出的菜单中选择“装载”，在弹出的“安全提醒”对话框中选择“继续”，即可成功导入；然后点击左上角的“✗”，回到首页。
 
@@ -98,7 +98,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/iHTTP_Tracke
 https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_switchserver_gw.f4thor
 ```
 
-2. **选中跨服所用过滤器**：点击闪电按钮上方显示的过滤器名称，在弹出的“过滤器”列表中，点击刚刚导入的跨服所用过滤器，然后会自动返回首页。
+2. **选中跨服过滤器**：点击闪电按钮上方显示的过滤器名称，在弹出的“过滤器”列表中，点击选中刚导入的跨服过滤器，然后会自动返回首页。
 3. **启动 Thor**：点击闪电按钮启动 Thor，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（不玩游戏时，别忘了停止 Thor。）
 
 </details>
@@ -109,7 +109,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_sw
  > 另外，因为 2.1.67 (1156) 版本修复了一个 Bug，使得跨服以此版本为界，分为新旧两种。强烈建议更新到 2.1.67 (1156) 版本以上。
 
 <details>
-<summary>点击查看：新配置方法（适用于 2.1.67 (1156) 及以上版本）</summary>
+<summary>点击查看：配置跨服（新，适用于 2.1.67 (1156) 及以上版本）</summary>
 
 ##### 方法一：直接订阅简易跨服配置
 
@@ -141,7 +141,7 @@ gfcn_switchserver_gw = type=http-request,script-path=https://raw.githubuserconte
 </details>
 
 <details>
-<summary>点击查看：旧配置方法（适用于 2.1.62 (1118) ～ 2.1.67 (1155) 版本）</summary>
+<summary>点击查看：配置跨服（旧，适用于 2.1.62 (1118) ～ 2.1.67 (1155) 版本）</summary>
 
 ##### 方法一：直接订阅简易跨服配置
 
@@ -175,7 +175,7 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 #### ⑸ Quantumult X
 
 <details>
-<summary>点击查看：配置方法</summary>
+<summary>点击查看：配置跨服</summary>
 
 ##### 方法一：本地脚本（商店版、TF 版均可用）
 
@@ -200,7 +200,7 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 #### ⑹ Surge 4
 
 <details>
-<summary>点击查看：配置方法</summary>
+<summary>点击查看：配置跨服</summary>
 
 ##### 方法一：订阅模块化配置
 
@@ -234,7 +234,7 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 #### ⑺ Loon
 
 <details>
-<summary>点击查看：配置方法</summary>
+<summary>点击查看：配置跨服</summary>
 
 ##### 方法一：直接下载简易跨服配置
 
