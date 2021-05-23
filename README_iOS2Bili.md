@@ -90,8 +90,6 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher
 #### ⑵ iHTTP Tracker
  > 有 Bug 尚未解决，暂不可用。
 
-暂不提供。
-
 #### ⑶ Thor
 
 <details>
@@ -125,8 +123,64 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_sw
 </details>
 
 #### ⑷ Shadowrocket
+ > 需 Shadowrocket 为 2.1.67 (1156) 及以上的 TF 或商店版本。
+
+<details>
+<summary>点击查看：第一部分 获取账号登录信息</summary>
+
+**注意事项**：只有**首次跨服**、**账号登录数据失效**两种情况下才需要完整执行一次第一部分的操作。**不需要每次跨服前都去执行一次！**
+
+##### 方法一：直接订阅简易配置
+
+1. **【iOS】新建本机节点**：在首页，点击右上角”+“，添加一个类型为”HTTP“（或”HTTPS“）、地址为”localhost“（或”127.0.0.1“）、端口为”1080“（或其他在 1-65535 之间的端口）的节点，然后在首页的”服务器节点“中选中该节点。
+2. **【iOS】设置路由模式**：将”全局路由“设置为”直连“（或”配置“）。
+3. **【iOS】设置远程订阅 URL**：在”配置文件“页面，点击右上角”+“，输入下面的远程订阅 URL，点击下载。
+
+```
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_bili.conf
+```
+
+4. **【iOS】下载并应用简易配置**：在”远程文件“中点击该 URL，选择”使用配置“，等待下载完毕后，即可看到”本地文件“中加载了本配置。
+5. **【iOS】启用调试日志记录**：在”设置“界面，点击进入”高级“部分中的”诊断“，然后打开”启用日志记录“开关；返回首页。
+6. **【iOS】设置代理共享**：在”设置“界面，点击进入”TUNNEL“部分中的”代理“，再点击进入”代理共享“，打开”启用共享“开关，并记住下方的”IP“及”端口“。
+7. **【iOS】启动 Shadowrocket 进行数据抓取**：返回首页，打开 Shadowrocket 的连接开关，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
+8. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在”系统设置“→”无线网络“中，找到当前连接的 Wi-Fi，点击进入详细设置，找到”代理设置“，将其改为”手动“，并在”服务器“和”端口“中依次填入第 6 步中记下的内容；点击”保存“返回。
+9. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，完整进行一次登录操作，直到看到自己的用户名及等级，即可退出游戏。
+10. **还原第 1～8 步所做操作至修改前**：即：停止 Shadowrocket；取消安卓机的 Wi-Fi 代理；关闭代理共享；关闭调试日志记录；切回原配置文件、原路由模式、原节点（此项非必需，视个人使用情况；但第 1～4 步在第二部分的方法一中**还需再用到**，所以此处**建议保留不还原**）。
+11. **【iOS】提取账号登录数据（重要！）**：在”设置“界面中，点击进入”高级“部分中的”诊断“，再进入“VPN 日志”，找到刚才生成的日志点击进入；在“内容”界面中一直往下翻，直到找到夹在两排等号分隔线之间的“获取账号数据”内容，其中就有”open_id“和”token“，将它们各自复制保存好，在后面的第二部分配置过程中需要用到。
+
+##### 方法二：手动写入当前使用中配置
+
+1. **【iOS】进入配置编辑界面**：在”配置文件“页面，从”本地文件“中找到当前正在使用的配置，点击它，在弹出的列表中选择”编辑纯文本“。
+2. **【iOS】添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的”保存“，返回 Shadowrocket 的首页。
+
+```
+[Script]
+# 少女前线 跨 Bilibili 服
+## 第一部分 获取帐号数据
+gfcn_switchserver_bili_GetToken = type=http-response,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_bili_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
+## 第二部分 切换服务器
+gfcn_switchserver_bili_P1 = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_bili_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+## 第二部分 写入帐号数据
+gfcn_switchserver_bili_P2 = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_switchserver_bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
+```
+
+3. **【iOS】启用调试日志记录**：在”设置“界面，点击进入”高级“部分中的”诊断“，然后打开”启用日志记录“开关；返回首页。
+4. **【iOS】设置代理共享**：在”设置“界面，点击进入”TUNNEL“部分中的”代理“，再点击进入”代理共享“，打开”启用共享“开关，并记住下方的”IP“及”端口“。
+5. **【iOS】启动 Shadowrocket 进行数据抓取**：返回首页，打开 Shadowrocket 的连接开关，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
+6. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在”系统设置“→”无线网络“中，找到当前连接的 Wi-Fi，点击进入详细设置，找到”代理设置“，将其改为”手动“，并在”服务器“和”端口“中依次填入第 4 步中记下的内容；点击”保存“返回。
+7. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，完整进行一次登录操作，直到看到自己的用户名及等级，即可退出游戏。
+8. **还原第 3～7 步所做操作至修改前**：即：停止 Shadowrocket；取消安卓机的 Wi-Fi 代理；关闭代理共享；关闭调试日志记录。
+9. **【iOS】提取账号登录数据（重要！）**：在”设置“界面中，点击进入”高级“部分中的”诊断“，再进入“VPN 日志”，找到刚才生成的日志点击进入；在“内容”界面中一直往下翻，直到找到夹在两排等号分隔线之间的“获取账号数据”内容，其中就有”open_id“和”token“，将它们各自复制保存好，在后面的第二部分配置过程中需要用到。
+
+</details>
+
+<details>
+<summary>点击查看：第二部分 配置跨服</summary>
 
 待补充完整。
+
+</details>
 
 #### ⑸ Quantumult X
 
