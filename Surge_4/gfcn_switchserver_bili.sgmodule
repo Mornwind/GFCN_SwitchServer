@@ -4,6 +4,8 @@
 
 [Script]
 # 少女前线 跨 Bilibili 服
+## 获取帐号数据
+gfcn_switchserver_bili_GetToken = type=http-response,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_switchserver_bili_GetToken.js,requires-body=1
 ## 切换服务器
 gfcn_switchserver_bili_P1 = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_switchserver_bili_P1.js,requires-body=1
 ## 写入帐号数据

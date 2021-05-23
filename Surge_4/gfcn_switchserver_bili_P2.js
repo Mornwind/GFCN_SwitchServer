@@ -6,15 +6,15 @@ README:
 https://github.com/Mornwind/GFCN_SwitchServer/blob/master/README.md
 */
 
-// 先获取 Bilibili 服账号登录数据（即响应体 Response Body 中"open_id"与"token"对应的值）
-// 再分别替换以下两行中双引号内的"abc"与"xyz"（双引号不要删改）
-var open_id = "abc";
-var token = "xyz";
+const cookieName = "「少女前线」跨服（iOS 端 → Bilibili 服）";
+const cookie1Key = "gfcn_ios2bili_open_id";
+const cookie1Val = $persistentStore.read(cookie1Key);
+const cookie2Key = "gfcn_ios2bili_token";
+const cookie2Val = $persistentStore.read(cookie2Key);
 
-// 以下部分请勿更改！以下部分请勿更改！以下部分请勿更改！
 let body = $request.body;
 
-body = body.replace(/(openid=).*?&/,'$1' + open_id + '&').replace(/(sid=).*?&/,'$1' + token + '&');
+body = body.replace(/(openid=).*?&/,'$1' + cookie1Val + '&').replace(/(sid=).*?&/,'$1' + cookie2Val + '&');
 
 $done({
 	body: body
