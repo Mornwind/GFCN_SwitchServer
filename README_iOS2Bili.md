@@ -30,7 +30,6 @@
 | 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
 | :-: | :-: | :-: | :-: |
 | ![](/Icon/HTTP_Catcher_Icon.png) | HTTP Catcher | 网球 | [文字教程](#-http-catcher) |
-| ![](/Icon/iHTTP_Tracker_Icon.png) | iHTTP Tracker | 猫头鹰 | [文字教程](#-ihttp-tracker) |
 | ![](/Icon/Thor_Icon.png) | Thor | 锤子 | [文字教程](#-thor) |
 | ![](/Icon/Shadowrocket_Icon.png) | Shadowrocket | 小火箭 | [文字教程](#-shadowrocket) |
 | ![](/Icon/Quantumult_X_Icon.png) | Quantumult X | 圈叉 | [文字教程](#-quantumult-x) |
@@ -43,7 +42,6 @@
 | 跨服工具 | 国区商店<br/>购买与下载 | 正规渠道价格 | 跨服操作<br/>方便程度 | 设备上同时<br/>挂梯与跨服 | 备注 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | HTTP Catcher<br/>（网球） | ✅ | ¥28.00（内购）<br/>\$3.99（内购） | ★★★★ | ❌ |  |
-| iHTTP Tracker<br/>（猫头鹰） | ❌ | ¥18.00<br/>\$2.99 | - | ❌ | 有 Bug 尚未解决，暂不可用 |
 | Thor<br/>（锤子） | ✅ | ¥88.00<br/>\$12.99 | ★★★★ | ❌ |  |
 | Shadowrocket<br/>（小火箭） | ❌ | \$2.99 | ★★★★ | ✅ |  |
 | Quantumult X<br/>（圈叉） | ❌ | \$7.99 | ★★ | ✅ | TF 名额已满 |
@@ -87,10 +85,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher
 
 </details>
 
-#### ⑵ iHTTP Tracker
- > 有 Bug 尚未解决，暂不可用。
-
-#### ⑶ Thor
+#### ⑵ Thor
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息</summary>
@@ -122,7 +117,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_sw
 
 </details>
 
-#### ⑷ Shadowrocket
+#### ⑶ Shadowrocket
  > 需 Shadowrocket 为 2.1.67 (1156) 及以上的 TF 或商店版本。
 
 <details>
@@ -219,15 +214,15 @@ gfcn_switchserver_bili_P2 = type=http-request,script-path=https://raw.githubuser
 
 </details>
 
-#### ⑸ Quantumult X
+#### ⑷ Quantumult X
 
 待补充完整。
 
-#### ⑹ Surge 4
+#### ⑸ Surge 4
 
 待补充完整。
 
-#### ⑺ Loon
+#### ⑹ Loon
 
 待补充完整。
 

@@ -29,7 +29,6 @@
 | 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
 | :-: | :-: | :-: | :-: |
 | ![](/Icon/HTTP_Catcher_Icon.png) | HTTP Catcher | 网球 | [文字教程](#-http-catcher) |
-| ![](/Icon/iHTTP_Tracker_Icon.png) | iHTTP Tracker | 猫头鹰 | [文字教程](#-ihttp-tracker) |
 | ![](/Icon/Thor_Icon.png) | Thor | 锤子 | [文字教程](#-thor) |
 | ![](/Icon/Shadowrocket_Icon.png) | Shadowrocket | 小火箭 | [文字教程](#-shadowrocket) |
 | ![](/Icon/Quantumult_X_Icon.png) | Quantumult X | 圈叉 | [文字教程](#-quantumult-x) |
@@ -42,7 +41,6 @@
 | 跨服工具 | 国区商店<br/>购买与下载 | 正规渠道价格 | 跨服操作<br/>方便程度 | 设备上同时<br/>挂梯与跨服 | 备注 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | HTTP Catcher<br/>（网球） | ✅ | ¥28.00（内购）<br/>\$3.99（内购） | ★★★★ | ❌ |  |
-| iHTTP Tracker<br/>（猫头鹰） | ❌ | ¥18.00<br/>\$2.99 | - | ❌ | 有 Bug 尚未解决，暂不可用 |
 | Thor<br/>（锤子） | ✅ | ¥88.00<br/>\$12.99 | ★★★★ | ❌ |  |
 | Shadowrocket<br/>（小火箭） | ❌ | \$2.99 | ★★★★ | ✅ |  |
 | Quantumult X<br/>（圈叉） | ❌ | \$7.99 | ★★ | ✅ | TF 名额已满 |
@@ -69,25 +67,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher
 
 </details>
 
-#### ⑵ iHTTP Tracker
- > 有 Bug 尚未解决，暂不可用。
-
-<details>
-<summary>点击查看：配置跨服（暂不可用）</summary>
-
-1. **下载并导入跨服配置文件**：下载下面的“.cs5”类型的跨服配置文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后分享到“iHTTP Tracker”；在 iHTTP Tracker 中弹出的“检测到导入重写规则”对话框中选择“导入”，即可成功导入。
-
-```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/iHTTP_Tracker/gfcn_switchserver_gw.cs5
-```
-
-2. **启用跨服配置**：进入“设置”→“规则列表”，在“重写”页面中，确保刚刚导入的跨服配置的开关已打开；然后返回“设置”页面。
-3. **停用网络记录保存**：在“设置”页面中，关闭“保存网络记录”开关。
-4. **启动 iHTTP Tracker**：点击下方蓝色的启动按钮，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（不玩游戏时，别忘了停止 iHTTP Tracker。）
-
-</details>
-
-#### ⑶ Thor
+#### ⑵ Thor
 
 <details>
 <summary>点击查看：配置跨服</summary>
@@ -103,7 +83,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_sw
 
 </details>
 
-#### ⑷ Shadowrocket
+#### ⑶ Shadowrocket
  > 需 Shadowrocket 为 2.1.62 (1118) 及以上的 TF 或商店版本，因为新版本中才有跨服所需的脚本功能。
  > 
  > 另外，因为 2.1.67 (1156) 版本修复了一个 Bug，使得跨服以此版本为界，分为新旧两种。强烈建议更新到 2.1.67 (1156) 版本以上。
@@ -172,7 +152,7 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 
 </details>
 
-#### ⑸ Quantumult X
+#### ⑷ Quantumult X
 
 <details>
 <summary>点击查看：配置跨服</summary>
@@ -197,7 +177,7 @@ gfcn_switchserver_gw_old = type=http-request,script-path=https://raw.githubuserc
 
 </details>
 
-#### ⑹ Surge 4
+#### ⑸ Surge 4
 
 <details>
 <summary>点击查看：配置跨服</summary>
@@ -231,7 +211,7 @@ gfcn_switchserver_gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.su
 
 </details>
 
-#### ⑺ Loon
+#### ⑹ Loon
 
 <details>
 <summary>点击查看：配置跨服</summary>

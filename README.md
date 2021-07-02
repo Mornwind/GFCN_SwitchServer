@@ -53,7 +53,6 @@
 
 - **网络调试工具（仅抓包）**
   - HTTP Catcher：<https://apps.apple.com/app/id1445874902>
-  - iHTTP Tracker：<https://apps.apple.com/app/id1463315864>
   - Thor：<https://apps.apple.com/app/id1210562295>
 - **网络调试工具（抓包、代理）**
   - Shadowrocket：<https://apps.apple.com/app/id932747118>
