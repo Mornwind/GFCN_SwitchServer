@@ -105,7 +105,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_io
 3. **设置远程订阅 URL**：在“配置文件”页面，点击右上角“+”，输入下面的远程订阅 URL，点击下载。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_ios2gw.conf
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2gw.conf
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
@@ -120,7 +120,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-gfcn_ios2gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_ios2gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2gw = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
@@ -137,7 +137,7 @@ gfcn_ios2gw = type=http-request,script-path=https://raw.githubusercontent.com/Mo
 3. **设置远程订阅 URL**：在“配置文件”页面，点击右上角“+”，输入下面的远程订阅 URL，点击下载。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_ios2gw_old.conf
+https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2gw_old.conf
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
@@ -152,7 +152,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-gfcn_ios2gw_old = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrocket/gfcn_ios2gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2gw_old = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
@@ -179,7 +179,7 @@ gfcn_ios2gw_old = type=http-request,script-path=https://raw.githubusercontent.co
 [rewrite_local]
 # 少女前线 跨安卓官服
 ## 切换服务器
-^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Quantumult_X/gfcn_ios2gw.js
+^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Quan_X/gfcn_ios2gw.js
 ```
 
 </details>
