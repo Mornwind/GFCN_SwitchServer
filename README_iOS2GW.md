@@ -1,7 +1,7 @@
 # 「少女前线」跨服手册（散爆版）（iOS 端 → 安卓官服）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
- > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)
+ > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)（博客中也有教程，使用的是国内备用仓库）
  > 
  > GitHub Repo: [Mornwind/GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
  > 
