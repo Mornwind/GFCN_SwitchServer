@@ -5,4 +5,4 @@
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-gfcn_ios2gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2gw.js,requires-body=1
+gfcn_ios2gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.js,requires-body=1

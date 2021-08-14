@@ -81,7 +81,7 @@
 1. **下载并导入跨服配置文件**：下载下面的“.hcc”类型的跨服配置文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘HTTP Catcher’”；在 HTTP Catcher 中弹出的“导入”对话框中选择“好的”，即可成功导入。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher/gfcn_ios2bili.hcc
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2bili.hcc
 ```
 
 2. **填入账号信息（重要！）**：进入“更多”→“重写”，在弹出的“重写列表”界面中，找到有“写入账号数据”的一条，点击右侧的ⓘ进入“编辑重写”界面；在“规则”中，先点进第一项（含“openid=”），进入“编辑规则”界面，找到最下方的“替换”部分，将已获取到账号数据中的“open_id”值替换掉其中的“abc”（千万不要删改其前后的“$1”及“&”；粘贴后如出现空格需删除），点击右上角的“存储”回到“编辑重写”界面；再点进第二项（含“sid=”），进入“编辑规则”界面，找到最下方的“替换”部分，将已获取到账号数据中的“token”值替换掉其中的“xyz”（千万不要删改其前后的“$1”及“&”；粘贴后如出现空格需删除），点击右上角的“存储”回到“编辑重写”界面；再点击右上角的“存储”回到“重写列表”界面。
@@ -115,7 +115,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/HTTP_Catcher
 1. **下载并导入跨服配置文件**：下载下面的“.f4thor”类型的跨服配置（过滤器）文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘Thor’”；在弹出的跨服配置（过滤器）预览页面中，点击右上角导出图标，在弹出的菜单中选择“装载”，在弹出的“安全提醒”对话框中选择“继续”，即可成功导入；然后点击左上角的“✗”，回到主界面。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_ios2bili.f4thor
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2bili.f4thor
 ```
 
 2. **填入账号信息（重要！）**：在“过滤器”主界面中，点击闪电按钮上方显示的漏斗图标或过滤器名称，在弹出的“过滤器”列表中，找到刚导入的跨服过滤器，点击右侧的ⓘ并选择“编辑”；在弹出的过滤器详细设置界面中，找到第二项“挂载断点”并点击下方进入；在“编辑断点”界面中，找到第二项“写入账号数据”并点击其下方的“变量绑定”；在“变量绑定”界面中，进入“${open_id}”下的“当前值”，填入已获取到账号数据中的“open_id”值，返回“变量绑定”界面；再进入“${token}”下的“当前值”，填入已获取到账号数据中的“token”值，返回“变量绑定”界面；点击两次左上角“返回”，然后再点击右上角“存储”，即可保存更改并返回“过滤器”列表。
@@ -139,7 +139,7 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Thor/gfcn_io
 3. **【iOS】设置远程订阅 URL**：在”配置文件“页面，点击右上角”+“，输入下面的远程订阅 URL，点击下载。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili.conf
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili.conf
 ```
 
 4. **【iOS】下载并应用简易配置**：在”远程文件“中点击该 URL，选择”使用配置“，等待下载完毕后，即可看到”本地文件“中加载了“gfcn_ios2bili.conf”配置。
@@ -160,11 +160,11 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gf
 [Script]
 # 少女前线 跨 Bilibili 服
 ## 第一部分 获取帐号数据
-gfcn_ios2bili_GetToken = type=http-response,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2bili_GetToken = type=http-response,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
 ## 第二部分 切换服务器
-gfcn_ios2bili_P1 = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2bili_P1 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ## 第二部分 写入帐号数据
-gfcn_ios2bili_P2 = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **【iOS】启用调试日志记录**：在”设置“界面，点击进入”高级“部分中的”诊断“，然后打开”启用日志记录“开关；返回首页。
@@ -189,7 +189,7 @@ gfcn_ios2bili_P2 = type=http-request,script-path=https://raw.githubusercontent.c
 3. **设置远程订阅 URL**：在”配置文件“界面，点击右上角”+“，输入下面的远程订阅 URL，点击下载。
 
 ```
-https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili.conf
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili.conf
 ```
 
 4. **下载并应用简易跨服配置**：在”远程文件“中点击该 URL，选择”使用配置“，等待下载完毕后，即可看到”本地文件“中加载了“gfcn_ios2bili.conf”配置。
@@ -208,11 +208,11 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gf
 [Script]
 # 少女前线 跨 Bilibili 服
 ## 第一部分 获取帐号数据
-gfcn_ios2bili_GetToken = type=http-response,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2bili_GetToken = type=http-response,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
 ## 第二部分 切换服务器
-gfcn_ios2bili_P1 = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2bili_P1 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ## 第二部分 写入帐号数据
-gfcn_ios2bili_P2 = type=http-request,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Shadowrkt/gfcn_ios2bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **将脚本 P2 从云端改存至本设备**：在“配置文件”界面点击该配置，选择“编辑配置”，然后点击进入“脚本”→“gfcn_ios2bili_P2”；在弹出的“添加脚本”界面，点击“Script”右侧的ⓘ，再在弹出的“Script”界面中，点击下方的“保存”；在弹出的预览界面中，等脚本从云端加载完毕并显示后，点击右上角的“保存”返回“Script”界面。
