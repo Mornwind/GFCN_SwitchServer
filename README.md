@@ -1,7 +1,9 @@
 # 「少女前线」跨服手册（散爆版）（前言）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
- > GitHub Link: [Mornwind/GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
+ > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)
+ > 
+ > GitHub Repo: [Mornwind/GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
  > 
  > QQ Group：
  > > 【霞之丘 · 少前跨服】:[`915089623`](https://jq.qq.com/?_wv=1027&k=5rnvPAT)（本群已于 2021/8/12 10:59 被封，损失惨重，故新群拆分成两个，分别运作）
