@@ -162,24 +162,26 @@ gfcn_ios2gw_old = type=http-request,script-path=https://github.com/Mornwind/GFCN
 </details>
 
 #### ⑷ Quantumult X
- > QuanX 需已通过正版收据认证，才可正常使用应用内的各种功能（包括重写功能、远程资源、远程脚本等）。
+ > Quantumult X 需先通过商店版应用内的收据验证，才可正常使用应用内的各种功能（包括重写功能、远程资源、远程脚本等）。
 
 <details>
 <summary>点击查看：配置跨服</summary>
 
 ##### 方法一：远程引用重写配置片段（推荐）
 
-1. **添加重写引用远程资源**：在主界面中，点击右下角带有 QuanX 图标（类似三片风扇扇页）的圆形按钮进入设置界面；在弹出的设置界面中，找到“重写”部分，点击“重写”下的“引用”；在弹出的“资源列表（重写）”界面中，点击右上角的“新建远程资源”按钮（图标为铁链⛓️带个加号⨁）；在弹出的“资源”窗口中，在“标签”中填入“少女前线 跨安卓官服”，“自动更新”间隔默认定为“48 小时”，在“资源路径”中填入下面的远程资源 URL；然后点击右上角“保存”按钮，在弹出的成功提示中点击“确定”，返回设置界面。
+1. **添加重写引用远程资源**：在主界面中，点击右下角带有 Quantumult X 图标（类似三片风扇扇页）的圆形按钮进入设置界面；在弹出的设置界面中，找到“重写”部分，点击“重写”下的“引用”；在弹出的“资源列表（重写）”界面中，点击右上角的“新建远程资源”按钮（图标为铁链⛓️带个加号⨁）；在弹出的“资源”窗口中，在“标签”中填入“少女前线 跨安卓官服”，“自动更新”间隔默认设置为“48 小时”，在“资源路径”中填入下面的远程资源 URL；然后点击右上角“保存”按钮，在弹出的成功提示中点击“确定”，返回设置界面。
 
 ```
 https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.snippet
 ```
 
 2. **启用“重写”功能**：在设置界面中，找到刚才的“重写”部分，打开其右侧的开关启用功能；然后点击左上角的箭头返回主界面。
-
-3. **启动 QuanX**：打开主界面右上角开关启动 QuanX，即可在 iOS 端跨服登录安卓国服。
+3. **启动 QuanX**：打开主界面右上角开关启动 Quantumult X，即可在 iOS 端跨服登录安卓国服。
 
 ##### 方法二：手动写入当前使用中配置
+
+1. **进入配置编辑界面**：在主界面中，点击右下角带有 Quantumult X 图标（类似三片风扇扇页）的圆形按钮进入设置界面；在弹出的设置界面中，找到“配置文件”部分，点击“配置文件”下的“编辑”。
+2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[rewrite_local]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“保存”，返回 Quantumult X 的首页。
 
 ```
 [rewrite_local]
@@ -187,6 +189,8 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.snip
 ## 切换服务器
 ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.js
 ```
+
+3. **重启 Quantumult X**：为确保修改生效，可以开关一次 Quantumult X 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
 
 </details>
 
