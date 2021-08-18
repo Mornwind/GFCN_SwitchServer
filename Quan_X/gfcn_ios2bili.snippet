@@ -1,0 +1,7 @@
+# 少女前线 跨 Bilibili 服
+## 获取帐号数据
+^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin url script-response-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2bili_GetToken.js
+## 切换服务器
+^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2bili_P1.js
+## 写入帐号数据
+^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue url script-request-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2bili_P2.js
