@@ -30,7 +30,17 @@
 
 ---
 
-## iOS 端常见跨服方式
+## iOS 端跨服手册
+ 
+- **iOS 端 → 安卓官服**：[点此跳转](/README_iOS2GW.md)
+
+- **iOS 端 → Bilibili 服**：[点此跳转](/README_iOS2Bili.md)
+
+- **iOS 端 → 渠道混服**：（尚未研究。有兴趣可以尝试结合以下"附录3"，参照跨 Bilibili 服教程操作）
+
+---
+
+## 附录1：iOS 端常见跨服方式
 
 在 iOS 端上，常见的游戏跨服方式主要可分为以下三大类六小类：
 
@@ -43,22 +53,13 @@
 | C-1 | 通过**使用云游戏平台**，<br/>**将游戏画面实时传输至移动设备**，<br/>**间接**实现跨服 | 操作较少<br/>能跨部分渠道服 | 可选渠道服受制于云平台<br/>严重依赖网络质量<br/>安全性无法保证<br/>非会员每日游戏时长受限<br/>非会员每次进入需排队等候 |
 | C-2 | 通过**使用云主机**，<br/>**将游戏画面实时传输至移动设备**，<br/>**间接**实现跨服 | 能跨渠道服 | 需要会亿点操作<br/>云主机普遍价格很高<br/>严重依赖网络质量 |
 
----
-
-## iOS 端跨服手册
- 
-- **iOS 端 → 安卓官服**：[点此跳转](/README_iOS2GW.md)
-
-- **iOS 端 → Bilibili 服**：[点此跳转](/README_iOS2Bili.md)
-
-- **iOS 端 → 渠道混服**：（尚未研究。有兴趣可以尝试结合以下“附录2”，参照跨 Bilibili 服教程操作）
-
----
-
-## 附录1：App Store 链接
+## 附录2：App Store 链接
 
 - **游戏本体**
-  - 少女前线：<https://apps.apple.com/app/id1117273600>
+  - 少女前线（iOS 官服）：<https://apps.apple.com/app/id1117273600>
+  - 少女前线（安卓官服 - 官网）：<https://gf-cn.sunborngame.com/>
+  - 少女前线（安卓官服 - TapTap）：<https://www.taptap.com/app/10505>
+  - 少女前线（Bilibili 服）：<https://www.biligame.com/detail/?id=73>
 
 - **网络调试工具（仅抓包）**
   - HTTP Catcher：<https://apps.apple.com/app/id1445874902>
@@ -69,7 +70,7 @@
   - Surge 4：<https://apps.apple.com/app/id1442620678>
   - Loon：<https://apps.apple.com/app/id1373567447>
 
-## 附录2：「少女前线」国服客户端登录参数
+## 附录3：「少女前线」国服客户端登录参数
  > 以下为分别连接不同的国服服务器时，有效的客户端登录参数。
 
 ### 官服
