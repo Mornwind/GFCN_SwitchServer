@@ -32,11 +32,17 @@
 
 ## iOS 端跨服手册
  
-- **iOS 端 → 安卓官服**：[点此跳转](/README_iOS2GW.md)
+### iOS 端 → 安卓官服
 
-- **iOS 端 → Bilibili 服**：[点此跳转](/README_iOS2Bili.md)
+[点此跳转](/README_iOS2GW.md)
 
-- **iOS 端 → 渠道混服**：（尚未研究。有兴趣可以尝试结合以下"附录3"，参照跨 Bilibili 服教程操作）
+### iOS 端 → Bilibili 服
+
+[点此跳转](/README_iOS2Bili.md)
+
+### iOS 端 → 渠道混服
+
+尚未研究。有兴趣可以尝试结合以下"附录3"，参照跨 Bilibili 服教程操作。
 
 ---
 
