@@ -225,15 +225,65 @@ gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFC
 
 #### ⑷ Quantumult X
 
-待补充完整。
+<details>
+<summary>点击查看：第一部分 获取账号登录信息</summary>
+
+**注意事项**：只有**首次跨服**、**账号登录数据失效**两种情况下才需要完整执行一次第一部分的操作。**不需要每次跨服前都去执行一次！**
+
+由于 **Quantumult X 为外部设备提供服务的 HTTP 代理模块没有数据分析功能，只有纯粹的代理功能**（开发者原话），所以目前无法在 Quantumult X 中直接实现获取账号登录信息。
+
+想要获取账号登录信息，请考虑借助以下工具：
+
+- 安卓上的 Http Canary
+
+- PC 上的 Fiddler 或 Charles
+
+- iOS 上的其他几款网络工具（如本教程中介绍过的几款；另外也包括 Charles）
+
+</details>
+
+<details>
+<summary>点击查看：第二部分 配置跨服（待补充完整）</summary>
+
+
+
+</details>
 
 #### ⑸ Surge 4
 
-待补充完整。
+<details>
+<summary>点击查看：第一部分 获取账号登录信息（待补充完整）</summary>
+
+**注意事项**：只有**首次跨服**、**账号登录数据失效**两种情况下才需要完整执行一次第一部分的操作。**不需要每次跨服前都去执行一次！**
+
+
+
+</details>
+
+<details>
+<summary>点击查看：第二部分 配置跨服（待补充完整）</summary>
+
+
+
+</details>
 
 #### ⑹ Loon
 
-待补充完整。
+<details>
+<summary>点击查看：第一部分 获取账号登录信息（待补充完整）</summary>
+
+**注意事项**：只有**首次跨服**、**账号登录数据失效**两种情况下才需要完整执行一次第一部分的操作。**不需要每次跨服前都去执行一次！**
+
+
+
+</details>
+
+<details>
+<summary>点击查看：第二部分 配置跨服（待补充完整）</summary>
+
+
+
+</details>
 
 ### A-2 类型（未提供）
  > A-2：通过**使用他人提供的代理服务器**，**在远端重写客户端请求**，**直接**实现跨服。
