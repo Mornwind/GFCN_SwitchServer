@@ -186,7 +186,6 @@ gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFC
 4. **【iOS】启动 Shadowrocket 进行数据抓取**：返回首页，打开 Shadowrocket 的连接开关，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
 5. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在”系统设置“→”无线网络“中，找到当前连接的 Wi-Fi，点击进入详细设置，找到”代理设置“，将其改为”手动“，并在”服务器“和”端口“中依次填入第 3 步中记下的内容；点击”保存“返回。
 6. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次 B 站账号的登录，即可退出游戏。
-7. **还原第 3～5 步所做操作至修改前**：即：停止 Shadowrocket；取消安卓机的 Wi-Fi 代理；关闭代理共享。
 
 </details>
 
@@ -195,23 +194,9 @@ gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFC
 
 ##### 方法二：手动写入当前使用中配置
 
-**⚠️提醒⚠️**：第二部分的第 1～2 步若在第一部分中**已操作过**，则此时可**直接从第二部分第 3 步开始**，**无需重复操作**。
+**⚠️提醒⚠️**：借助数据持久化，**无需再去手动编辑脚本填入账号数据**。
 
-1. **进入配置编辑界面**：在”配置文件“界面，从”本地文件“中找到当前正在使用的配置，点击它，在弹出的列表中选择”编辑纯文本“。
-2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的”保存“，返回“配置文件”界面。
-
-```
-[Script]
-# 少女前线 跨 Bilibili 服
-## 第一部分 获取帐号数据
-gfcn_ios2bili_GetToken = type=http-response,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
-## 第二部分 切换服务器
-gfcn_ios2bili_P1 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
-## 第二部分 写入帐号数据
-gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
-```
-
-3. **重启 Shadowrocket**：为确保修改生效，可以返回 Shadowrocket 的首页，开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
+1. **启动 Shadowrocket**：回到首页打开 Shadowrocket 的连接开关（若接续第一部分操作，则保持开关开启不动）；然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
 
 </details>
 
