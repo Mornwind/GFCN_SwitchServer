@@ -236,13 +236,13 @@ gfcn_ios2gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame
 ##### 方法一：直接使用插件功能（推荐）
 
 1. **进入“插件”页面**：点击底栏中的“配置”，找到“插件”部分，点击进入。
-2. **添加跨服插件**：在弹出的“插件”页面中，点击最上方的“添加”按钮（图标为加号⨁），进入“添加插件”页面；在“URL”中填入下方的 URL，在“别名”中填入“少女前线 跨安卓官服”，“PROXY”默认为空白不选（或选内置的“DIRECT”），然后点击右上角“保存”；然后返回至“配置”页面。
+2. **添加跨服插件**：在弹出的“插件”界面中，点击最上方的“添加”按钮（图标为加号⨁），进入“添加插件”界面；在“URL”中填入下方的 URL，在“别名”中填入“少女前线 跨安卓官服”，“PROXY”默认为空白不选（或选内置的“DIRECT”），然后点击右上角“保存”；然后返回至“配置”界面。
 
 ```
 https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.conf
 ```
 
-3. **启用“重写”功能**：在“配置”页面中，找到“脚本”部分，打开右侧的开关启用功能；然后返回首页“仪表”页 。
+3. **启用“重写”功能**：在“配置”界面中，找到“脚本”部分，打开右侧的开关启用功能；然后返回首页“仪表”页 。
 4. **启动 Loon**：点击 Loon 首页”仪表“页右上角的“启动“开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Loon 的连接。）
 
 ##### 方法二：手动写入当前使用中配置
@@ -257,7 +257,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.conf
 http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.js, requires-body=true, tag=gfcn_ios2gw
 ```
 
-3. **启用“脚本”功能**：在“仪表”页面中，找到“脚本”卡片，打开“脚本”功能的开关。（若未找到，点击功能卡片下方的“快捷方式”，将“脚本”设置为可见即可）
+3. **启用“脚本”功能**：在“仪表”界面中，找到“脚本”卡片，打开“脚本”功能的开关。（若未找到，点击功能卡片下方的“快捷方式”，将“脚本”设置为可见即可）
 4. **重启 Loon**：为确保修改生效，可以开关一次 Loon 右上角的“启动”开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
 
 </details>
