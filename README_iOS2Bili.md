@@ -192,8 +192,6 @@ gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFC
 <details>
 <summary>点击查看：第二部分 配置跨服</summary>
 
-##### 方法二：手动写入当前使用中配置
-
 **⚠️提醒⚠️**：借助数据持久化，**无需再去手动编辑脚本填入账号数据**。
 
 1. **启动 Shadowrocket**：回到首页打开 Shadowrocket 的连接开关（若接续第一部分操作，则保持开关开启不动）；然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
