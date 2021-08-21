@@ -72,7 +72,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2g
 2. **启用跨服配置**：进入“更多”→“重写”，在弹出的“重写列表”界面中，点击下面的跨服配置使其前面出现“✓”。
 3. **启用重写功能**：在“重写列表”界面中，打开上面的“重写列表”开关；然后回到“更多”界面。
 4. **启用仅记录消息头**：进入“高级设置”，打开“仅记录消息头”开关；然后回到“历史”界面。
-5. **启动 HTTP Catcher**：点击下方的开关按钮，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（不玩游戏时，别忘了停止 HTTP Catcher。）
+5. **启动 HTTP Catcher**：点击下方的开关按钮，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（如无其他使用需求，不玩游戏时别忘了停止 HTTP Catcher。）
 
 </details>
 
@@ -88,7 +88,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2gw.f4thor
 ```
 
 2. **选中跨服过滤器**：点击闪电按钮上方显示的过滤器名称，在弹出的“过滤器”列表中，点击选中刚导入的跨服过滤器，然后会自动返回首页。
-3. **启动 Thor**：在“过滤器”主界面中，点击闪电按钮启动 Thor，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（不玩游戏时，别忘了停止 Thor。）
+3. **启动 Thor**：在“过滤器”主界面中，点击闪电按钮启动 Thor，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（如无其他使用需求，不玩游戏时别忘了停止 Thor。）
 
 </details>
 
@@ -111,7 +111,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.c
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
-5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Shadowrocket 的连接。）
+5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
 
 ##### 方法二：手动写入当前使用中配置
 
@@ -125,7 +125,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.c
 gfcn_ios2gw = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
-3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
+3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
 
 </details>
 
@@ -143,7 +143,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_o
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
-5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Shadowrocket 的连接。）
+5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
 
 ##### 方法二：手动写入当前使用中配置
 
@@ -157,7 +157,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_o
 gfcn_ios2gw_old = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ```
 
-3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
+3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
 
 </details>
 
@@ -176,7 +176,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.snip
 ```
 
 2. **启用“重写”功能**：在设置界面中，找到刚才的“重写”部分，打开其右侧的开关启用功能；然后点击左上角的箭头返回主界面。
-3. **启动 QuanX**：打开主界面右上角开关启动 Quantumult X，即可在 iOS 端跨服登录安卓国服。
+3. **启动 QuanX**：打开主界面右上角开关启动 Quantumult X，即可在 iOS 端跨服登录安卓国服。（如无其他使用需求，不玩游戏时别忘了停止 Quantumult X。）
 
 ##### 方法二：手动写入当前使用中配置
 
@@ -190,7 +190,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.snip
 ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.js
 ```
 
-3. **重启 Quantumult X**：为确保修改生效，可以开关一次 Quantumult X 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
+3. **重启 Quantumult X**：为确保修改生效，可以开关一次 Quantumult X 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Quantumult X。）
 
 </details>
 
@@ -209,7 +209,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.sgm
 
 2. **启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。
 3. **启用“始终开启”功能**：在“更多”→“设置”→“始终开启”中，打开“自动启动 Surge”的开关，即可保持 Surge 4 一直后台开启。
-4. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可在 iOS 端跨服登录安卓国服。
+4. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可在 iOS 端跨服登录安卓国服。（如无其他使用需求，不玩游戏时别忘了停止 Surge 4。）
 
 ##### 方法二：手动编辑配置
 
@@ -224,7 +224,7 @@ gfcn_ios2gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame
 
 2. **启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。
 3. **启用“始终开启”功能**：在“更多”→“设置”→“始终开启”中，打开“自动启动 Surge”的开关，即可保持 Surge 4 一直后台开启。
-4. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可完成跨服。
+4. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可完成跨服。（如无其他使用需求，不玩游戏时别忘了停止 Surge 4。）
 
 </details>
 
@@ -235,20 +235,20 @@ gfcn_ios2gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame
 
 ##### 方法一：直接使用插件功能（推荐）
 
-1. **进入“插件”页面**：点击底栏中的“配置”，找到“插件”部分，点击进入。
+1. **进入“插件”页面**：点击进入底栏中的“配置”界面，找到“插件”部分，点击进入。
 2. **添加跨服插件**：在弹出的“插件”界面中，点击最上方的“添加”按钮（图标为加号⨁），进入“添加插件”界面；在“URL”中填入下方的 URL，在“别名”中填入“少女前线 跨安卓官服”，“PROXY”默认为空白不选（或选内置的“DIRECT”），然后点击右上角“保存”；然后返回至“配置”界面。
 
 ```
 https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.conf
 ```
 
-3. **启用“重写”功能**：在“配置”界面中，找到“脚本”部分，打开右侧的开关启用功能；然后返回首页“仪表”页 。
-4. **启动 Loon**：点击 Loon 首页”仪表“页右上角的“启动“开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（不玩游戏时，别忘了停止 Loon 的连接。）
+3. **启用“脚本”功能**：在“配置”界面中，找到“脚本”部分，打开右侧的开关启用功能；然后返回“仪表”界面 。
+4. **启动 Loon**：点击”仪表“界面右上角的“启动“开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Loon。）
 
 ##### 方法二：手动写入当前使用中配置
 
 1. **进入配置编辑界面**：点击下方的“配置”，然后翻到最下面“编辑”部分，点击“文本编辑”。
-2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“完成”，然后返回首页“仪表”页。
+2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“完成”，然后返回“仪表”界面。
 
 ```
 [Script]
@@ -257,8 +257,8 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.conf
 http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.js, requires-body=true, tag=gfcn_ios2gw
 ```
 
-3. **启用“脚本”功能**：在“仪表”界面中，找到“脚本”卡片，打开“脚本”功能的开关。（若未找到，点击功能卡片下方的“快捷方式”，将“脚本”设置为可见即可）
-4. **重启 Loon**：为确保修改生效，可以开关一次 Loon 右上角的“启动”开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。
+3. **启用“脚本”功能**：在“仪表”界面中，找到“脚本”卡片，打开“脚本”功能的开关。（若未找到，点击功能卡片下方的“快捷方式”，将“脚本”卡片设置为可见即可）
+4. **重启 Loon**：为确保修改生效，可以开关一次“仪表”界面右上角的“启动”开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Loon。）
 
 </details>
 
