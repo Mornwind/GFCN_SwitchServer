@@ -20,9 +20,7 @@ if (cookie1Val && cookie2Val) {
   if (cookie1 && cookie2) {
     let msg = `${cookieName}`;
     $notify(msg, 'Bilibili 服账号数据获取成功', '详见日志');
-    console.log(msg + "\n");
-    console.log("open_id" + "\n" + cookie1Val);
-    console.log("token" + "\n" + cookie2Val);
+    console.log("\n\n" + "===============" + "\n\n" + msg + "\n\n" + "获取账号数据 结果如下：" + "\n\n" + "open_id 为：" + "\n" + cookie1Val + "\n\n" + "token 为：" + "\n" + cookie2Val + "\n\n" + "===============" + "\n");
   }
 }
 
