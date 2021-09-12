@@ -68,7 +68,7 @@
 | C-1 | 通过**使用云游戏平台**，<br/>**将游戏画面实时传输至移动设备**，<br/>**间接**实现跨服 | 操作较少<br/>能跨部分渠道服 | 可选渠道服受制于云平台<br/>严重依赖网络质量<br/>安全性无法保证<br/>非会员每日游戏时长受限<br/>非会员每次进入需排队等候 |
 | C-2 | 通过**使用云主机**，<br/>**将游戏画面实时传输至移动设备**，<br/>**间接**实现跨服 | 能跨渠道服 | 需要会亿点操作<br/>云主机普遍价格很高<br/>严重依赖网络质量 |
 
-## 附录2：游戏及工具下载链接
+## 附录2：游戏及网络工具下载链接
 
 - **游戏本体**
   - 少女前线（iOS 官服）：<https://apps.apple.com/app/id1117273600>
@@ -76,13 +76,13 @@
   - 少女前线（安卓官服 - TapTap）：<https://www.taptap.com/app/10505>
   - 少女前线（Bilibili 服）：<https://www.biligame.com/detail/?id=73>
 
-- **【安卓端】网络调试工具（仅抓包及重写）**
-  - HttpCanary Premium：<https://play.google.com/store/apps/details?id=com.guoshi.httpcanary.premium>（注：作者已下架本应用基础版及高级版，只能通过其他途径获取。）
-
-- **【iOS 端】网络调试工具（仅抓包及重写）**
+- **【安卓端】网络调试工具**
+  - HttpCanary (Premium)：<https://play.google.com/store/apps/details?id=com.guoshi.httpcanary.premium>（注：开发者已主动下架此应用的基础版及高级版，只能通过其他途径获取）
+  - Hosts Go：<https://play.google.com/store/apps/details?id=dns.hosts.server.change>
+  
+- **【iOS 端】网络调试工具**
   - HTTP Catcher：<https://apps.apple.com/app/id1445874902>
   - Thor：<https://apps.apple.com/app/id1210562295>
-- **【iOS 端】网络调试工具（抓包及重写；代理）**
   - Shadowrocket：<https://apps.apple.com/app/id932747118>
   - Quantumult X：<https://apps.apple.com/app/id1443988620>
   - Surge 4：<https://apps.apple.com/app/id1442620678>
