@@ -47,7 +47,7 @@
  
 ### 安卓端 → iOS 官服
 
-[点此跳转（待补充完整）](/README_Adr2iOS.md)
+[点此跳转](/README_Adr2iOS.md)
 
 ### PC 端（安卓模拟器） → iOS 官服
 

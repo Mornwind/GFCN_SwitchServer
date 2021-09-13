@@ -51,13 +51,18 @@
 
 </details>
 
-#### ⑵ Hosts Go
+### ⑵ Hosts Go
  > 需 Hosts Go 为 2.1.9 (32) 版本。
+ > 
+ > 注：跨服所用服务器“47.103.222.34”非本人提供。在此感谢跨服服务器的提供者！
 
 <details>
-<summary>点击查看：配置跨服（待补充完整）</summary>
+<summary>点击查看：配置跨服</summary>
 
-
+1. **授予 Hosts Go 存储权限**：（各安卓定制系统设置方法有差异，此处不详述）首次启动应用时，同意授予 Hosts Go 存储权限，以确保 HOSTS 文件能成功导入。
+2. **设置 Hosts**：在首页，点击下方“HOSTS 设置”按钮，在弹出的 HOSTS 记录界面中，点击右上角“添加 HOSTS”按钮；在弹出的“添加域名”界面中，“IP 地址”中填入“47.103.222.34”（见上方“注”），“域名”中填入“gfcn-transit.gw.sunborngame.com”，然后点击下方“添加域名”按钮完成添加；按返回键返回至首页。
+3. **打开 HOSTS 保护**：在首页，找到“HOSTS 保护”，若其下方显示为“Last modified: xxx”而非“目前还未导入 HOSTS 文件，请配置 HOSTS 文件！”，即可打开“HOSTS 保护”开关。
+4. **启动 Hosts Go**：点击首页下方“启动”图标以启动 Hosts Go，即可在安卓端跨服登录 iOS 国服。（如无其他使用需求，不玩游戏时别忘了停止 HttpCanary。
 
 </details>
 
