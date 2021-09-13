@@ -33,7 +33,9 @@
 ## 跨服手册
 
 ### ⑴ HttpCanary
- > 需 HttpCanary 为 3.3.6 (58) 高级（Premium）版本。但开发者已主动下架此应用基础版及高级版，只能通过其他途径获取。
+ > 需 HttpCanary 为 3.3.6 (58) 高级（Premium）版本。因少前跨服不涉及 HTTPS 解密，故使用 HttpCanary 时无需 ROOT，也无需安装证书。
+ > 
+ > 另注：开发者已主动下架此应用基础版及高级版，只能通过其他途径获取。
 
 <details>
 <summary>点击查看：配置跨服</summary>
