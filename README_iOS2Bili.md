@@ -180,7 +180,7 @@ gfcn_ios2bili_GetToken = type=http-response,script-path=https://github.com/Mornw
 ## 第二部分 切换服务器
 gfcn_ios2bili_P1 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ## 第二部分 写入帐号数据
-gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **【iOS】设置代理共享**：在”设置“界面，点击进入”TUNNEL“部分中的”代理“，再点击进入”代理共享“，打开”启用共享“开关，并记住下方的”IP“及”端口“。

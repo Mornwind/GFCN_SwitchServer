@@ -15,4 +15,4 @@ gfcn_ios2bili_GetToken = type=http-response,pattern=^http:\/\/gfcn-passport\.(.+
 ## 切换服务器
 gfcn_ios2bili_P1 = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2bili_P1.js,requires-body=1
 ## 写入帐号数据
-gfcn_ios2bili_P2 = type=http-request,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/5000\/Index\/getUidEnMicaQueue,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2bili_P2.js,requires-body=1
+gfcn_ios2bili_P2 = type=http-request,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2bili_P2.js,requires-body=1
