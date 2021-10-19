@@ -41,6 +41,10 @@
 
 [点此跳转](/README_iOS2Bili.md)
 
+### iOS 端 → 应用宝服
+
+[点此跳转](/README_iOS2TX.md)
+
 ### iOS 端 → 渠道混服
 
 尚未研究。有兴趣可以尝试结合以下"附录3"，参照跨 Bilibili 服教程操作。
@@ -75,6 +79,7 @@
   - 少女前线（安卓官服 - 官网）：<https://gf-cn.sunborngame.com/>
   - 少女前线（安卓官服 - TapTap）：<https://www.taptap.com/app/10505>
   - 少女前线（Bilibili 服）：<https://www.biligame.com/detail/?id=73>
+  - 少女前线（应用宝服）：<https://sj.qq.com/myapp/detail.htm?apkName=com.tencent.tmgp.girlsfrontline>
 
 - **【安卓端】网络调试工具**
   - HttpCanary (Premium)：<https://play.google.com/store/apps/details?id=com.guoshi.httpcanary.premium>（注：开发者已主动下架此应用的基础版及高级版，只能通过其他途径获取）
@@ -103,4 +108,5 @@
 | 服务器 \ 参数 | URL / Host | Request Body<br/>`channel` | Request Body<br/>`device` | Request Body<br/>`platformChannelId` |
 | :-: | :-: | :-: | :-: | :-: |
 | Bilibili 服 | ⋯`.bili.`⋯ | `cn_bili` | `adr` | `Bili` |
+| 应用宝服 | ⋯`.tx.`⋯ | `cn_txy` | `adr` | `TX` |
 | 渠道混服 | ⋯`.ly.`⋯ | `cn_third` | `adr` | `GWHF` |
