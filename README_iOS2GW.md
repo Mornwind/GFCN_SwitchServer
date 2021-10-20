@@ -240,7 +240,7 @@ gfcn_ios2gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame
 2. **添加跨服插件**：在弹出的“插件”界面中，点击最上方的“添加”按钮（图标为加号⨁），进入“添加插件”界面；在“URL”中填入下方的 URL，在“别名”中填入“少女前线 跨安卓官服”，“PROXY”默认为空白不选（或选内置的“DIRECT”），然后点击右上角“保存”；然后返回至“配置”界面。
 
 ```
-https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.conf
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.plugin
 ```
 
 3. **启用“脚本”功能**：在“配置”界面中，找到“脚本”部分，打开右侧的开关启用功能；然后返回“仪表”界面 。
