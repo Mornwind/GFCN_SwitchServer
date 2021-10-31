@@ -1,4 +1,4 @@
-# 「少女前线」跨服手册（散爆版）（iOS 端 → 应用宝服）
+# 「少女前线」跨服手册（散爆版）（iOS 端 → 渠道混服）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
  > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)（博客中也有教程，使用的是国内备用仓库）
@@ -27,6 +27,7 @@
 1. 本项目内所提到的所有客户端与服务器，均为**国服**。
 2. 跨服脚本中**并未含有**用于修改游戏内数据以获得不正当收益的作弊内容，只是用来切换服务器，故理论上不会被封号。跨服脚本代码**公开透明**地存放于本项目中，欢迎随时进行检查。如若不放心，还请另寻他法。
 3. **无法进行跨服充值，否则 1000% 会错充进客户端对应的原服务器，切记！**
+4. iOS 端跨渠道混服由于人数过少，无法保证跨服配置对所有渠道服有效，如遇问题请及时反馈。
 
 ---
 
@@ -71,7 +72,7 @@
 3. **【iOS】禁用仅记录消息头**：进入“更多”→“高级设置”，关闭“仅记录消息头”开关；然后回到“历史”界面。
 4. **【iOS】启动 HTTP Catcher 进行数据抓取**：点击下方的开关按钮启动 HTTP Catcher，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
 5. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在“系统设置”→“无线网络”中，找到当前连接的 Wi-Fi，点击进入详细设置，找到“代理设置”，将其改为“手动”，并在“服务器”和“端口”中依次填入第 1 步中记下的内容；点击“保存”返回。
-6. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次 QQ 或微信账号的授权登录并看到自己的玩家等级后，即可退出游戏。
+6. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次渠道服账号的登录（直到显示“XXX，欢迎回来”），即可退出游戏。
 7. **还原第 1～5 步所做操作至修改前**：即：停止 HTTP Catcher；禁用“Wi-Fi 访问”；取消安卓机的 Wi-Fi 代理；开启“仅记录消息头”；启用 HTTPS 解密（此项非必需，视个人使用情况）。
 8. **【iOS】提取账号登录数据（重要！）**：在“历史”界面上方的搜索栏中输入“/third”，即可搜出一条显示为“/third/channelLogin”的记录，点击进入；在弹出的界面中，点击上方的“响应”选项卡，在下方“Preview”中即可找到“open_id”和“token”，将各自后面所跟双引号内的内容复制保存好（复制时不包括双引号本身），在后面的第二部分配置过程中需要用到。
 
@@ -83,7 +84,7 @@
 1. **下载并导入跨服配置文件**：下载下面的“.hcc”类型的跨服配置文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘HTTP Catcher’”；在 HTTP Catcher 中弹出的“导入”对话框中选择“好的”，即可成功导入。
 
 ```
-https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2tx.hcc
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2hf.hcc
 ```
 
 2. **填入账号信息（重要！）**：进入“更多”→“重写”，在弹出的“重写列表”界面中，找到有“写入账号数据”的一条，点击右侧的ⓘ进入“编辑重写”界面；在“规则”中，先点进第一项（含“openid=”），进入“编辑规则”界面，找到最下方的“替换”部分，将已获取到账号数据中的“open_id”值替换掉其中的“abc”（千万不要删改其前后的“$1”及“&”；粘贴后如出现空格需删除），点击右上角的“存储”回到“编辑重写”界面；再点进第二项（含“sid=”），进入“编辑规则”界面，找到最下方的“替换”部分，将已获取到账号数据中的“token”值替换掉其中的“xyz”（千万不要删改其前后的“$1”及“&”；粘贴后如出现空格需删除），点击右上角的“存储”回到“编辑重写”界面；再点击右上角的“存储”回到“重写列表”界面。
@@ -105,7 +106,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2t
 2. **【iOS】禁用 HTTPS 解密**：在“更多”界面中，点击“HTTPS 解析设置”进入“HTTPS 证书管理”界面，将“CA 证书”中已启用的证书停用；然后返回主界面。
 3. **【iOS】启用 Wi-Fi 监听**：在“过滤器”主界面中，点击闪电按钮启动 Thor；然后翻到界面最下方，先关闭“本机监听”的开关，再打开“Wi-Fi 监听”的开关，并记住“Wi-Fi 监听”下方的“服务器”及“端口”。
 4. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在“系统设置”→“无线网络”中，找到当前连接的 Wi-Fi，点击进入详细设置，找到“代理设置”，将其改为“手动”，并在“服务器”和“端口”中依次填入第 1 步中记下的内容；点击“保存”返回。
-5. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次 QQ 或微信账号的授权登录并看到自己的玩家等级后，即可退出游戏。
+5. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次渠道服账号的登录（直到显示“XXX，欢迎回来”），即可退出游戏。
 6. **还原第 2～4 步所做操作至修改前**：即：停止 Thor（会自动重置“本机监听”与“Wi-Fi 监听”的开关为默认状态，无需手改）；取消安卓机的 Wi-Fi 代理；启用 HTTPS 解密（此项非必需，视个人使用情况）。
 7. **【iOS】提取账号登录数据（重要！）**：在“会话记录”界面中，点击进入找到刚才生成的“全局抓包”记录；在弹出的界面上方的“关键字”搜索栏中输入“/third”并点击“搜索”，即可搜出一条显示为“/third/channelLogin”的记录，点击进入；在弹出的界面中，点击上方的“响应”选项卡，再点击“消息体”部分中的“text/html”，在弹出的“消息体”内容界面中即可找到“open_id”和“token”，将各自后面所跟双引号内的内容复制保存好（复制时不包括双引号本身），在后面的第二部分配置过程中需要用到。
 
@@ -117,7 +118,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2t
 1. **下载并导入跨服配置文件**：下载下面的“.f4thor”类型的跨服配置（过滤器）文件，通过“共享”或“在其他应用中打开”调出系统分享菜单，然后选择“拷贝到‘Thor’”；在弹出的跨服配置（过滤器）预览界面中，点击右上角导出图标，在弹出的菜单中选择“装载”，在弹出的“安全提醒”对话框中选择“继续”，即可成功导入；然后点击左上角的“✗”，回到主界面。
 
 ```
-https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2tx.f4thor
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2hf.f4thor
 ```
 
 2. **填入账号信息（重要！）**：在“过滤器”主界面中，点击闪电按钮上方显示的漏斗图标或过滤器名称，在弹出的“过滤器”列表中，找到刚导入的跨服过滤器，点击右侧的ⓘ并选择“编辑”；在弹出的过滤器详细设置界面中，找到第二项“挂载断点”并点击下方进入；在“编辑断点”界面中，找到第二项“写入账号数据”并点击其下方的“变量绑定”；在“变量绑定”界面中，进入“${open_id}”下的“当前值”，填入已获取到账号数据中的“open_id”值，返回“变量绑定”界面；再进入“${token}”下的“当前值”，填入已获取到账号数据中的“token”值，返回“变量绑定”界面；点击两次左上角“返回”，然后再点击右上角“存储”，即可保存更改并返回“过滤器”列表。
@@ -141,14 +142,14 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2tx.f4thor
 3. **【iOS】设置远程订阅 URL**：在”配置文件“界面，点击右上角”+“，输入下面的远程订阅 URL，点击下载。
 
 ```
-https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2tx.conf
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2hf.conf
 ```
 
-4. **【iOS】下载并应用简易配置**：在”远程文件“中点击该 URL，选择”使用配置“，等待下载完毕后，即可看到”本地文件“中加载了“gfcn_ios2tx.conf”配置。
+4. **【iOS】下载并应用简易配置**：在”远程文件“中点击该 URL，选择”使用配置“，等待下载完毕后，即可看到”本地文件“中加载了“gfcn_ios2hf.conf”配置。
 5. **【iOS】设置代理共享**：在”设置“界面，点击进入”TUNNEL“部分中的”代理“，再点击进入”代理共享“，打开”启用共享“开关，并记住下方的”IP“及”端口“。
 6. **【iOS】启动 Shadowrocket 进行数据抓取**：返回首页，打开 Shadowrocket 的连接开关，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
 7. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在”系统设置“→”无线网络“中，找到当前连接的 Wi-Fi，点击进入详细设置，找到”代理设置“，将其改为”手动“，并在”服务器“和”端口“中依次填入第 5 步中记下的内容；点击”保存“返回。
-8. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次 QQ 或微信账号的授权登录并看到自己的玩家等级后，即可退出游戏。
+8. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次渠道服账号的登录（直到显示“XXX，欢迎回来”），即可退出游戏。
 
 </details>
 
@@ -173,19 +174,19 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2tx.c
 
 ```
 [Script]
-# 少女前线 跨应用宝服
+# 少女前线 跨渠道混服
 ## 第一部分 获取帐号数据
-gfcn_ios2tx_GetToken = type=http-response,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2tx_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2hf_GetToken = type=http-response,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2hf_GetToken.js,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,max-size=1048576,requires-body=true,enable=true
 ## 第二部分 切换服务器
-gfcn_ios2tx_P1 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2tx_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2hf_P1 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2hf_P1.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 ## 第二部分 写入帐号数据
-gfcn_ios2tx_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2tx_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2hf_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2hf_P2.js,pattern=^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue,max-size=1048576,requires-body=true,enable=true
 ```
 
 3. **【iOS】设置代理共享**：在”设置“界面，点击进入”TUNNEL“部分中的”代理“，再点击进入”代理共享“，打开”启用共享“开关，并记住下方的”IP“及”端口“。
 4. **【iOS】启动 Shadowrocket 进行数据抓取**：返回首页，打开 Shadowrocket 的连接开关，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
 5. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在”系统设置“→”无线网络“中，找到当前连接的 Wi-Fi，点击进入详细设置，找到”代理设置“，将其改为”手动“，并在”服务器“和”端口“中依次填入第 3 步中记下的内容；点击”保存“返回。
-6. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次 QQ 或微信账号的授权登录并看到自己的玩家等级后，即可退出游戏。
+6. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次渠道服账号的登录（直到显示“XXX，欢迎回来”），即可退出游戏。
 
 </details>
 
@@ -234,7 +235,7 @@ gfcn_ios2tx_P2 = type=http-request,script-path=https://github.com/Mornwind/GFCN_
 1. **【iOS】安装并启用跨服配置模块**：在“首页”中找到“模块”卡片（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见），点击“模块”，在弹出的“模块”界面中，找到“安装的模块”部分，点击“安装新模块...”，然后在弹出的“安装模块”对话框中输入下面的 URL 地址，点“好的”下载模块文件。然后在弹出的配置预览窗口中，**检查有无恶意内容并仔细阅读最下方的“警告”**，在确认无误后，点击最下方的“安装”。回到“模块”界面，即可看到跨服配置模块已成功安装，左侧有“✓”表示该模块已启用。
 
 ```
-https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2tx.sgmodule
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2hf.sgmodule
 ```
 
 2. **【iOS】启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。
@@ -242,7 +243,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2tx.sgm
 4. **【iOS】启用“Wi-Fi 访问”功能**：在”首页“中，翻到页面最下方，点击进入”更多设置“；在弹出的“高级”界面中，找到”Wi-Fi 访问“部分，打开”允许 Wi-Fi 访问“开关，并记住下方的”当前 Wi-Fi IP“及”HTTP 代理服务端口“。
 5. **【iOS】启动 Surge 4 进行数据抓取**：返回“首页”，点击右上角“启动”按钮启动 Surge 4，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
 6. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在”系统设置“→”无线网络“中，找到当前连接的 Wi-Fi，点击进入详细设置，找到”代理设置“，将其改为”手动“，并在”服务器“和”端口“中依次填入第 4 步中记下的内容；点击”保存“返回。
-7. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次 QQ 或微信账号的授权登录并看到自己的玩家等级后，即可退出游戏。
+7. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次渠道服账号的登录（直到显示“XXX，欢迎回来”），即可退出游戏。
 
 </details>
 
@@ -266,14 +267,14 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2tx.sgm
 2. **【iOS】添加跨服插件**：在弹出的“插件”界面中，点击最上方的“添加”按钮（图标为加号⨁），进入“添加插件”界面；在“URL”中填入下方的 URL，在“别名”中填入“少女前线 跨安卓官服”，“PROXY”默认为空白不选（或选内置的“DIRECT”），然后点击右上角“保存”；然后返回至“配置”界面。
 
 ```
-https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2tx.plugin
+https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2hf.plugin
 ```
 
 3. **【iOS】启用“脚本”功能**：在“配置”界面中，找到“脚本”部分，打开右侧的开关启用功能；然后返回首页“仪表”页。
 4. **【iOS】启用“Wi-Fi 访问”功能**：在“仪表”界面中，找到”网络共享“卡片（若未找到，点击功能卡片下方的“快捷方式”，将“网络共享”卡片设置为可见即可），打开”网络共享“功能开关，并记住下方显示的 IP 地址，以及点进卡片后在“代理服务”中显示的”HTTP 代理端口“。
 5. **【iOS】启动 Loon 进行数据抓取**：返回“仪表”界面，点击右上角“启动”开关启动 Loon，即可开始对相同 Wi-Fi 下的 Android 设备进行数据抓取。
 6. **【Android】配置安卓机的 Wi-Fi 代理（不同机型设置方法略有区别）**：**首先保证你的两个设备在同个 Wi-Fi 下**；然后在”系统设置“→”无线网络“中，找到当前连接的 Wi-Fi，点击进入详细设置，找到”代理设置“，将其改为”手动“，并在”服务器“和”端口“中依次填入第 4 步中记下的内容；点击”保存“返回。
-7. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次 QQ 或微信账号的授权登录并看到自己的玩家等级后，即可退出游戏。
+7. **【Android】抓取账号登录数据**：在清除了游戏后台的情况下进入游戏，在游戏中完整进行一次渠道服账号的登录（直到显示“XXX，欢迎回来”），即可退出游戏。
 
 </details>
 
