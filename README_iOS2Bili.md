@@ -17,8 +17,11 @@
 ## 致谢
 
 - **参考&协助**
-  - [霞ヶ丘詩羽x](https://space.bilibili.com/455501)：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
-  - [MoonNarga](https://github.com/MoonNarga)：[Server_Switch_for_GirlsFrontline](https://github.com/MoonNarga/Server_Switch_for_GirlsFrontline)
+  - 霞ヶ丘詩羽x / 浪速の白雪姬：[GitHub](https://gitee.com/KasumigaokaUtaha) / [Gitee](https://gitee.com/silvercrowsaki) / [Bilibili](https://space.bilibili.com/455501) / [NGA](https://bbs.nga.cn/thread.php?authorid=42650362)
+    - B 站专栏：[少女前线 跨服 iOS安卓国服（cv3630717）](https://www.bilibili.com/read/cv3630717)
+    - B 站专栏：[少前B服（散爆）iOS 跨服（cv3677605）](https://www.bilibili.com/read/cv3677605)（已被 B 站删帖）
+  - LNarga / MoonNarga：[GitHub](https://github.com/MoonNarga)
+    - GitHub：[Server_Switch_for_GirlsFrontline](https://github.com/MoonNarga/Server_Switch_for_GirlsFrontline)
 
 ---
 
@@ -30,11 +33,10 @@
 
 ---
 
-## 跨服手册
+## 📖 跨服手册 📖
  > 常见的游戏跨服方式分类，详见前言中的[附录3](/README.md#附录3ios-端常见跨服方式)。
-
-### A-1 类型
- > A-1：通过**使用网络调试工具**，**在本地重写客户端请求**，**直接**实现跨服。
+ > 
+ > 本手册仅详细介绍“**A-1 类型**”，即“通过**使用网络调试工具**，**在本地重写客户端请求**，**直接**实现跨服”。
 
 | 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
 | :-: | :-: | :-: | :-: |
@@ -59,7 +61,7 @@
 
 </details>
 
-#### ⑴ HTTP Catcher
+### ⑴ HTTP Catcher
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息</summary>
@@ -94,7 +96,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2b
 
 </details>
 
-#### ⑵ Thor
+### ⑵ Thor
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息</summary>
@@ -126,10 +128,10 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2bili.f4th
 
 </details>
 
-#### ⑶ Shadowrocket
+### ⑶ Shadowrocket
  > 需 Shadowrocket 为 2.1.67 (1156) 及以上的 TF 或商店版本。
 
-##### 方法一：直接订阅简易配置
+#### 方法一：直接订阅简易配置
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息</summary>
@@ -161,7 +163,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2bili
 
 </details>
 
-##### 方法二：手动写入当前使用中配置
+#### 方法二：手动写入当前使用中配置
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息</summary>
@@ -198,7 +200,7 @@ gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFC
 
 </details>
 
-#### ⑷ Quantumult X
+### ⑷ Quantumult X
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息（目前需借助其他工具）</summary>
@@ -224,7 +226,7 @@ gfcn_ios2bili_P2 = type=http-request,script-path=https://github.com/Mornwind/GFC
 
 </details>
 
-#### ⑸ Surge 4
+### ⑸ Surge 4
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息</summary>
@@ -255,7 +257,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2bili.s
 
 </details>
 
-#### ⑹ Loon
+### ⑹ Loon
 
 <details>
 <summary>点击查看：第一部分 获取账号登录信息</summary>
@@ -285,38 +287,6 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2bili.plug
 1. **启动 Loon**：回到”仪表“界面，点击右上角的“启动“开关启动 Loon（若接续第一部分操作，则保持启动状态不动）；然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Loon。）
 
 </details>
-
-### A-2 类型（未提供）
- > A-2：通过**使用他人提供的代理服务器**，**在远端重写客户端请求**，**直接**实现跨服。
-
-暂不提供此方式为「少女前线」进行跨服，因为使用代理服务器会受多种因素影响，造成跨服不稳定。
-
-### B 类型（未提供）
- > B-1：通过**对游戏客户端修改后重新打包**，**由他人统一签名后在线下载安装**，**直接**实现跨服。
- > 
- > B-2：通过**对游戏客户端修改后重新打包**，**自行签名然后越狱安装或侧载**，**直接**实现跨服。
-
-不提供此方式为「少女前线」进行跨服，因为修改客户端容易被封号。
-
-### C-1 类型
- > C-1：通过**使用云游戏平台**，**将游戏画面实时传输至移动设备**，**间接**实现跨服。
-
-| 图标 | 跨服工具 | 别名 | 跨服教程<br/>与配置 |
-| :-: | :-: | :-: | :-: |
-| - | 网易云游戏 | - | 见网易云游戏官网 |
-
-| 跨服工具 | 国区商店<br/>购买与下载 | 正规渠道价格 | 跨服操作<br/>方便程度 | 设备上同时<br/>挂梯与跨服 | 备注 |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| 网易云游戏 | - | ¥15.9/月<br/>¥70/季<br/>¥240/年 | ★★★★★ | ✅ | 部分渠道服平台未提供 |
-
- > 注：
- > 
- > 网易云游戏 - 官网：<https://cg.163.com>
-
-### C-2 类型
- > C-2：通过**使用云主机**，**将游戏画面实时传输至移动设备**，**间接**实现跨服。
-
-此方法需自行摸索。
 
 ---
 

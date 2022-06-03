@@ -17,8 +17,11 @@
 ## 致谢
 
 - **参考&协助**
-  - [霞ヶ丘詩羽x](https://space.bilibili.com/455501)：[B站专栏（cv3630717）](https://www.bilibili.com/read/cv3630717)
-  - [MoonNarga](https://github.com/MoonNarga)：[Server_Switch_for_GirlsFrontline](https://github.com/MoonNarga/Server_Switch_for_GirlsFrontline)
+  - 霞ヶ丘詩羽x / 浪速の白雪姬：[GitHub](https://gitee.com/KasumigaokaUtaha) / [Gitee](https://gitee.com/silvercrowsaki) / [Bilibili](https://space.bilibili.com/455501) / [NGA](https://bbs.nga.cn/thread.php?authorid=42650362)
+    - B 站专栏：[少女前线 跨服 iOS安卓国服（cv3630717）](https://www.bilibili.com/read/cv3630717)
+    - B 站专栏：[少前B服（散爆）iOS 跨服（cv3677605）](https://www.bilibili.com/read/cv3677605)（已被 B 站删帖）
+  - LNarga / MoonNarga：[GitHub](https://github.com/MoonNarga)
+    - GitHub：[Server_Switch_for_GirlsFrontline](https://github.com/MoonNarga/Server_Switch_for_GirlsFrontline)
 
 ---
 
@@ -41,6 +44,8 @@
 | iOS2HF | iOS 端 | 渠道混服 | [文字教程](/README_iOS2HF.md) |
 | Adr2iOS | 安卓端 | iOS 官服 | [文字教程](/README_Adr2iOS.md) |
 | AdrEmu2iOS | 安卓模拟器 | iOS 官服 | [文字教程](/README_AdrEmu2iOS.md) |
+
+注：上述代号中的“X2Y”可理解为“将X客户端上的登录X服切换为登录Y服”，简记为“在X端登录Y服”。
 
 ---
 
