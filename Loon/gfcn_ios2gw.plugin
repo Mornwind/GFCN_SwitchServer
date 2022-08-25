@@ -1,4 +1,4 @@
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.js,requires-body=true,tag=gfcn_ios2gw,enable=true
+http-request ^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.js,requires-body=true,tag=gfcn_ios2gw,enable=true

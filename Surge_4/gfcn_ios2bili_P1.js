@@ -10,7 +10,7 @@ let url = $request.url;
 let headers = $request.headers;
 let body = $request.body;
 
-url = url.replace(/gfcn-transit\.ios\.sunborngame\.com/,"gfcn-transit.bili.sunborngame.com");
+url = url.replace(/https:\/\/gfcn-transit\.ios\.sunborngame\.com/,"http://gfcn-transit.bili.sunborngame.com");
 headers['Host'] = 'gfcn-transit.bili.sunborngame.com';
 body = body.replace(/channel=cn_appstore/,"channel=cn_bili").replace(/device=ios/,"device=adr").replace(/platformChannelId=ios/,"platformChannelId=Bili");
 

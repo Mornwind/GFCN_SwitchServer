@@ -4,5 +4,5 @@
 
 [Script]
 # 少女前线 跨服
-gfcn_switchserver_bili_P1 = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_switchserver_bili_P1.js,requires-body=1
-gfcn_switchserver_bili_P2 = type=http-response,pattern=^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/passport\/(cnTokenRf|cnLogin),script-path=Scripts/gfcn_switchserver_bili_P2.js,requires-body=1
+gfcn_switchserver_bili_P1 = type=http-request,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_switchserver_bili_P1.js,requires-body=1
+gfcn_switchserver_bili_P2 = type=http-response,pattern=^https?:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/passport\/(cnTokenRf|cnLogin),script-path=Scripts/gfcn_switchserver_bili_P2.js,requires-body=1

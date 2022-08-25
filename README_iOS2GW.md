@@ -190,7 +190,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.snip
 [rewrite_local]
 # 少女前线 跨安卓官服
 ## 切换服务器
-^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.js
+^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.js
 ```
 
 3. **重启 Quantumult X**：为确保修改生效，可以开关一次 Quantumult X 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Quantumult X。）
@@ -222,7 +222,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.sgm
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-gfcn_ios2gw = type=http-request,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.js,requires-body=1
+gfcn_ios2gw = type=http-request,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.js,requires-body=1
 ```
 
 2. **启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。

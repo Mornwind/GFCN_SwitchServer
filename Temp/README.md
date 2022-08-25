@@ -28,9 +28,9 @@ https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_sw
 ```
 [Script]
 # 少女前线 跨服
-gfcn_switchserver_gw_temp_A.js = type=http-request,pattern=^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_A.js,requires-body=1
-gfcn_switchserver_gw_temp_B.js = type=http-response,pattern=^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_B.js,requires-body=1
-gfcn_switchserver_gw_temp_C.js = type=http-response,pattern=^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_C.js,requires-body=1
+gfcn_switchserver_gw_temp_A.js = type=http-request,pattern=^https?:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_A.js,requires-body=1
+gfcn_switchserver_gw_temp_B.js = type=http-response,pattern=^https?:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_B.js,requires-body=1
+gfcn_switchserver_gw_temp_C.js = type=http-response,pattern=^https?:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version,script-path=https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_C.js,requires-body=1
 ```
 
 ### ⑵ Quantumult X
@@ -38,18 +38,18 @@ gfcn_switchserver_gw_temp_C.js = type=http-response,pattern=^http:\/\/gfcn-game\
 ```
 [rewrite_local]
 # 少女前线 跨服
-^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url 307 http://gfcn-transit.gw.sunborngame.com/index.php
-^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw_temp_A.js
-^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body gfcn_switchserver_gw_temp_B.js
-^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body gfcn_switchserver_gw_temp_C.js
+^https?:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url 307 http://gfcn-transit.gw.sunborngame.com/index.php
+^https?:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body gfcn_switchserver_gw_temp_A.js
+^https?:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body gfcn_switchserver_gw_temp_B.js
+^https?:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body gfcn_switchserver_gw_temp_C.js
 ```
 
 #### ② 远程脚本（仅 TF 版可用）
 ```
 [rewrite_local]
 # 少女前线 跨服
-^http:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url 307 http://gfcn-transit.gw.sunborngame.com/index.php
-^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_A.js
-^http:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_B.js
-^http:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_C.js
+^https?:\/\/ios\.transit\.gf\.ppgame\.com\/index\.php url 307 http://gfcn-transit.gw.sunborngame.com/index.php
+^https?:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-request-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_A.js
+^https?:\/\/gfcn-transit\.gw\.sunborngame\.com\/index\.php url script-response-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_B.js
+^https?:\/\/gfcn-game\.gw(.*)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/version url script-response-body https://raw.githubusercontent.com/Mornwind/GFCN_SwitchServer/master/Temp/gfcn_switchserver_gw_temp_C.js
 ```

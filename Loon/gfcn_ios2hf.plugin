@@ -1,8 +1,8 @@
 [Script]
 # 少女前线 跨渠道混服
 ## 获取帐号数据
-http-response ^http:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2hf_GetToken.js,requires-body=true,tag=gfcn_ios2hf_GetToken,enable=true
+http-response ^https?:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2hf_GetToken.js,requires-body=true,tag=gfcn_ios2hf_GetToken,enable=true
 ## 切换服务器
-http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2hf_P1.js,requires-body=true,tag=gfcn_ios2hf_P1,enable=true
+http-request ^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2hf_P1.js,requires-body=true,tag=gfcn_ios2hf_P1,enable=true
 ## 写入帐号数据
-http-request ^http:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2hf_P2.js,requires-body=true,tag=gfcn_ios2hf_P2,enable=true
+http-request ^https?:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2hf_P2.js,requires-body=true,tag=gfcn_ios2hf_P2,enable=true
