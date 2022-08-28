@@ -19,7 +19,7 @@
 - **参考&协助**
   - 霞ヶ丘詩羽x / 浪速の白雪姬：[GitHub](https://gitee.com/KasumigaokaUtaha) / [Gitee](https://gitee.com/silvercrowsaki) / [Bilibili](https://space.bilibili.com/455501) / [NGA](https://bbs.nga.cn/thread.php?authorid=42650362)
     - B 站专栏：[少女前线 跨服 iOS安卓国服（cv3630717）](https://www.bilibili.com/read/cv3630717)
-    - B 站专栏：[少前B服（散爆）iOS 跨服（cv3677605）](https://www.bilibili.com/read/cv3677605)（已被 B 站删帖）
+    - B 站专栏：[少前B服（散爆）iOS 跨服（cv3677605）](https://www.bilibili.com/read/cv3677605)（专栏文章已被 B 站删除）
   - LNarga / MoonNarga：[GitHub](https://github.com/MoonNarga)
     - GitHub：[Server_Switch_for_GirlsFrontline](https://github.com/MoonNarga/Server_Switch_for_GirlsFrontline)
 
@@ -74,8 +74,11 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/HTTP_Catcher/gfcn_ios2g
 
 2. **启用跨服配置**：进入“更多”→“重写”，在弹出的“重写列表”界面中，点击下面的跨服配置使其前面出现“✓”。
 3. **启用重写功能**：在“重写列表”界面中，打开上面的“重写列表”开关；然后回到“更多”界面。
-4. **启用仅记录消息头**：进入“高级设置”，打开“仅记录消息头”开关；然后回到“历史”界面。
-5. **启动 HTTP Catcher**：点击下方的开关按钮，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（如无其他使用需求，不玩游戏时别忘了停止 HTTP Catcher。）
+4. **启用 HTTPS 解密功能**：在“更多”页面，打开最上面的“解密 HTTPS 流量”开关（旧版本中，此开关为“开启 HTTPS 抓包”）。
+5. **安装 MitM 证书**：在上一步中弹出的“安装证书描述文件”对话框中选择“安装”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装 MitM 所需证书。
+6. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后回到 HTTP Catcher 的“更多”页面。
+7. **启用仅记录消息头**：进入“高级设置”，打开“仅记录消息头”开关；然后回到“历史”界面。
+8. **启动 HTTP Catcher**：点击下方的开关按钮，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 HTTP Catcher。）
 
 </details>
 
@@ -91,7 +94,10 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2gw.f4thor
 ```
 
 2. **选中跨服过滤器**：点击闪电按钮上方显示的过滤器名称，在弹出的“过滤器”列表中，点击选中刚导入的跨服过滤器，然后会自动返回首页。
-3. **启动 Thor**：在“过滤器”主界面中，点击闪电按钮启动 Thor，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（如无其他使用需求，不玩游戏时别忘了停止 Thor。）
+3. **安装 MitM 证书**：进入“更多”→“HTTPS 解析设置”，在“HTTPS 证书管理”页面中点击“安装证书到系统”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装 MitM 所需证书。
+4. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后回到 Thor 的“HTTPS 证书管理”页面。
+5. **启用 HTTPS 解析**：在“HTTPS 证书管理”页面中，打开证书右侧的开关；然后返回首页。
+6. **启动 Thor**：在“过滤器”主界面中，点击闪电按钮启动 Thor，然后在清除了游戏后台的情况下进入游戏，即可完成跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Thor。）
 
 </details>
 
@@ -114,7 +120,10 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.c
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
-5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
+5. **安装 MitM 证书**：从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑配置”，进入“HTTPS 解密”，点击“证书授权”部分的“密码”右侧的ⓘ，在弹出的“证书”窗口中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
+6. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Shadowrocket 的“HTTPS 解密”页面。
+7. **启用 HTTPS 解密**：打开“HTTPS 解密”的开关，点击右上角的“✓”保存设置；然后返回 Shadowrocket 的首页。
+8. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
 
 #### 方法二：手动写入当前使用中配置
 
@@ -125,10 +134,17 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.c
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-gfcn_ios2gw = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2gw = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.js,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+
+[MITM]
+enable = true
+hostname = gfcn-transit.ios.sunborngame.com
 ```
 
-3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
+3. **安装 MitM 证书**：从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑配置”，进入“HTTPS 解密”，点击“证书授权”部分的“密码”右侧的ⓘ，在弹出的“证书”窗口中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
+4. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Shadowrocket 的“HTTPS 解密”页面。
+5. **启用 HTTPS 解密**：打开“HTTPS 解密”的开关，点击右上角的“✓”保存设置；然后返回 Shadowrocket 的首页。
+6. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Shadowrocket。）
 
 </details>
 
@@ -146,7 +162,10 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_o
 ```
 
 4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
-5. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
+5. **安装 MitM 证书**：从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑配置”，进入“HTTPS 解密”，点击“证书授权”部分的“密码”右侧的ⓘ，在弹出的“证书”窗口中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
+6. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Shadowrocket 的“HTTPS 解密”页面。
+7. **启用 HTTPS 解密**：打开“HTTPS 解密”的开关，点击右上角的“✓”保存设置；然后返回 Shadowrocket 的首页。
+8. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
 
 #### 方法二：手动写入当前使用中配置
 
@@ -157,10 +176,17 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_o
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-gfcn_ios2gw_old = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_old.js,pattern=^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+gfcn_ios2gw_old = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_old.js,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
+
+[MITM]
+enable = true
+hostname = gfcn-transit.ios.sunborngame.com
 ```
 
-3. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
+3. **安装 MitM 证书**：从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑配置”，进入“HTTPS 解密”，点击“证书授权”部分的“密码”右侧的ⓘ，在弹出的“证书”窗口中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
+4. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Shadowrocket 的“HTTPS 解密”页面。
+5. **启用 HTTPS 解密**：打开“HTTPS 解密”的开关，点击右上角的“✓”保存设置；然后返回 Shadowrocket 的首页。
+6. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Shadowrocket。）
 
 </details>
 
@@ -172,18 +198,21 @@ gfcn_ios2gw_old = type=http-request,script-path=https://github.com/Mornwind/GFCN
 
 #### 方法一：远程引用重写配置片段（推荐）
 
-1. **添加重写引用远程资源**：在主界面中，点击右下角带有 Quantumult X 图标（类似三片风扇扇页）的圆形按钮进入设置界面；在弹出的设置界面中，找到“重写”部分，点击“重写”下的“引用”；在弹出的“资源列表（重写）”界面中，点击右上角的“新建远程资源”按钮（图标为铁链⛓️带个加号⨁）；在弹出的“资源”窗口中，在“标签”中填入“少女前线 跨安卓官服”，“自动更新”间隔默认设置为“48 小时”，在“资源路径”中填入下面的远程资源 URL；然后点击右上角“保存”按钮，在弹出的成功提示中点击“确定”，返回设置界面。
+1. **添加重写引用远程资源**：在主界面中，点击右下角带有 Quantumult X 图标（类似三片风扇扇页）的按钮进入设置界面；在弹出的设置界面中，找到“重写”部分，点击“重写”下的“规则资源”；在弹出的“引用资源-重写”界面中，点击右上角的“新建远程资源”按钮（图标为铁链⛓️带个加号⨁）；在弹出的“资源-重写”窗口中，在“资源标签”中填入“少女前线 跨安卓官服”，“自动更新”间隔设置为“关闭”，在“资源路径”中填入下面的远程资源 URL；然后点击右上角“保存”按钮，在弹出的成功提示中点击“确定”，返回设置界面。
 
 ```
 https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.snippet
 ```
 
 2. **启用“重写”功能**：在设置界面中，找到刚才的“重写”部分，打开其右侧的开关启用功能；然后点击左上角的箭头返回主界面。
-3. **启动 QuanX**：打开主界面右上角开关启动 Quantumult X，即可在 iOS 端跨服登录安卓国服。（如无其他使用需求，不玩游戏时别忘了停止 Quantumult X。）
+3. **安装 MitM 证书**：在设置界面中，找到刚才的“MitM”部分，点击“生成证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
+4. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Quantumult X 的设置界面。
+5. **启用 HTTPS 解密**：在设置界面中，找到刚才的“MitM”部分，打开其右侧的开关启用功能；然后点击左上角的箭头返回主界面。
+6. **启动 QuanX**：打开主界面右上角开关启动 Quantumult X，即可在 iOS 端跨服登录安卓国服。（如无其他使用需求，成功跨服进入游戏后便可停止 Quantumult X。）
 
 #### 方法二：手动写入当前使用中配置
 
-1. **进入配置编辑界面**：在主界面中，点击右下角带有 Quantumult X 图标（类似三片风扇扇页）的圆形按钮进入设置界面；在弹出的设置界面中，找到“配置文件”部分，点击“配置文件”下的“编辑”。
+1. **进入配置编辑界面**：在主界面中，点击右下角带有 Quantumult X 图标（类似三片风扇扇页）的按钮进入设置界面；在弹出的设置界面中，找到“配置文件”部分，点击“配置文件”下的“编辑”。
 2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[rewrite_local]` 下方的代码，在配置文件中找到对应位置复制进去，然后点击右上角的“保存”，返回 Quantumult X 的首页。
 
 ```
@@ -191,9 +220,15 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.snip
 # 少女前线 跨安卓官服
 ## 切换服务器
 ^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php url script-request-body https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Quan_X/gfcn_ios2gw.js
+
+[MITM]
+hostname = gfcn-transit.ios.sunborngame.com
 ```
 
-3. **重启 Quantumult X**：为确保修改生效，可以开关一次 Quantumult X 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Quantumult X。）
+3. **安装 MitM 证书**：在设置界面中，找到刚才的“MitM”部分，点击“生成证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
+4. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Quantumult X 的设置界面。
+5. **启用 HTTPS 解密**：在设置界面中，找到刚才的“MitM”部分，打开其右侧的开关启用功能；然后点击左上角的箭头返回主界面。
+6. **重启 Quantumult X**：为确保修改生效，可以开关一次 Quantumult X 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Quantumult X。）
 
 </details>
 
@@ -212,7 +247,9 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.sgm
 
 2. **启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。
 3. **启用“始终开启”功能**：在“更多”→“设置”→“始终开启”中，打开“自动启动 Surge”的开关，即可保持 Surge 4 一直后台开启。
-4. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可在 iOS 端跨服登录安卓国服。（如无其他使用需求，不玩游戏时别忘了停止 Surge 4。）
+4. **安装 MitM 证书**：在“首页”中找到“MitM”卡片（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见），点击“配置根证书”，在弹出的“HTTPS 解密”窗口中，点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装 MitM 所需证书。
+5. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后回到 Surge 4 的“首页”。
+6. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可在 iOS 端跨服登录安卓国服。（如无其他使用需求，成功跨服进入游戏后便可停止 Surge 4。）
 
 #### 方法二：手动编辑配置
 
@@ -223,11 +260,17 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.sgm
 # 少女前线 跨安卓官服
 ## 切换服务器
 gfcn_ios2gw = type=http-request,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Surge_4/gfcn_ios2gw.js,requires-body=1
+
+[MITM]
+enable = true
+hostname = gfcn-transit.ios.sunborngame.com
 ```
 
 2. **启用“脚本”功能**：回到“首页”中，将“脚本”卡片的开关打开（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见）。
 3. **启用“始终开启”功能**：在“更多”→“设置”→“始终开启”中，打开“自动启动 Surge”的开关，即可保持 Surge 4 一直后台开启。
-4. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可完成跨服。（如无其他使用需求，不玩游戏时别忘了停止 Surge 4。）
+4. **安装 MitM 证书**：在“首页”中找到“MitM”卡片（若未找到，则去“更多”→“外观”→“卡片”中将该卡片设为可见），点击“配置根证书”，在弹出的“HTTPS 解密”窗口中，点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装 MitM 所需证书。
+5. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后回到 Surge 4 的“首页”。
+6. **启动 Surge 4**：点击“首页”右上角“启动”按钮启动 Surge 4，即可完成跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Surge 4。）
 
 </details>
 
@@ -246,7 +289,10 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.plugin
 ```
 
 3. **启用“脚本”功能**：在“配置”界面中，找到“脚本”部分，打开右侧的开关启用功能；然后返回“仪表”界面 。
-4. **启动 Loon**：点击”仪表“界面右上角的“启动“开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Loon。）
+4. **安装 MitM 证书**：在“配置”界面中，找到“MITM”部分，点击下方的“证书管理”，在弹出的“证书管理”界面中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装 MitM 所需证书。
+5. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Loon 的“配置”界面。
+6. **启用 HTTPS 解密**：在“配置”界面中，找到刚才的“MITM”部分，打开其右侧的开关启用功能；然后返回至“仪表”界面。
+7. **启动 Loon**：点击”仪表“界面右上角的“启动“开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Loon。）
 
 #### 方法二：手动写入当前使用中配置
 
@@ -257,11 +303,18 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.plugin
 [Script]
 # 少女前线 跨安卓官服
 ## 切换服务器
-http-request ^http:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.js, requires-body=true, tag=gfcn_ios2gw
+http-request ^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Loon/gfcn_ios2gw.js, requires-body=true, tag=gfcn_ios2gw
+
+[MITM]
+enable = true
+hostname = gfcn-transit.ios.sunborngame.com
 ```
 
 3. **启用“脚本”功能**：在“仪表”界面中，找到“脚本”卡片，打开“脚本”功能的开关。（若未找到，点击功能卡片下方的“快捷方式”，将“脚本”卡片设置为可见即可）
-4. **重启 Loon**：为确保修改生效，可以开关一次“仪表”界面右上角的“启动”开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Loon。）
+4. **安装 MitM 证书**：在“配置”界面中，找到“MITM”部分，点击下方的“证书管理”，在弹出的“证书管理”界面中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装 MitM 所需证书。
+5. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Loon 的“配置”界面。
+6. **启用 HTTPS 解密**：在“配置”界面中，找到刚才的“MITM”部分，打开其右侧的开关启用功能；然后返回至“仪表”界面。
+7. **重启 Loon**：为确保修改生效，可以开关一次“仪表”界面右上角的“启动”开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Loon。）
 
 </details>
 
