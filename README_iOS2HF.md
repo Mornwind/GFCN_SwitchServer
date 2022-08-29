@@ -136,7 +136,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2hf.f4thor
 </details>
 
 ### ⑶ Shadowrocket
- > 需 Shadowrocket 为 2.1.67 (1156) 及以上的 TF 或商店版本。
+ > 请尽可能将 Shadowrocket 更新至 2.2.10 (1761) 及以上的 TF 或商店版本（至少需高于 2.1.78 (1263) 版本）。目前 2.2.10 版本以下的 Shadowrocket 因太过久远未经测试，可能会在跨服时遇到“配置正确却无法跨服但又一直找不到原因”的情况。
 
 #### 方法一：直接订阅简易配置
 
