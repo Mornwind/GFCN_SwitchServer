@@ -105,7 +105,7 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Thor/gfcn_ios2gw.f4thor
  > 请尽可能将 Shadowrocket 更新至 2.2.10 (1761) 及以上的 TF 或商店版本（至少需高于 2.1.78 (1263) 版本）。目前 2.2.10 版本以下的 Shadowrocket 因太过久远未经测试，可能会在跨服时遇到“配置正确却无法跨服但又一直找不到原因”的情况。
 
 <details>
-<summary>点击查看：配置跨服（新，适用于 2.1.67 (1156) 及以上版本）</summary>
+<summary>点击查看：配置跨服</summary>
 
 #### 方法一：直接订阅简易跨服配置
 
@@ -133,48 +133,6 @@ https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.c
 # 少女前线 跨安卓官服
 ## 切换服务器
 gfcn_ios2gw = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw.js,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
-
-[MITM]
-enable = true
-hostname = gfcn-transit.ios.sunborngame.com
-```
-
-3. **安装 MitM 证书**：从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑配置”，进入“HTTPS 解密”，点击“证书授权”部分的“密码”右侧的ⓘ，在弹出的“证书”窗口中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
-4. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Shadowrocket 的“HTTPS 解密”页面。
-5. **启用 HTTPS 解密**：打开“HTTPS 解密”的开关，点击右上角的“✓”保存设置；然后返回 Shadowrocket 的首页。
-6. **重启 Shadowrocket**：为确保修改生效，可以开关一次 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，成功跨服进入游戏后便可停止 Shadowrocket。）
-
-</details>
-
-<details>
-<summary>点击查看：配置跨服（旧，适用于 2.1.62 (1118) ～ 2.1.67 (1155) 版本）</summary>
-
-#### 方法一：直接订阅简易跨服配置
-
-1. **新建本机节点**：在首页，点击右上角“+”，添加一个类型为“HTTP”（或“HTTPS”）、地址为“localhost”（或“127.0.0.1”）、端口为“1080”（或其他在 1-65535 之间的端口）的节点，然后在首页的“服务器节点”中选中该节点。
-2. **设置路由模式**：将“全局路由”设置为“直连”（或“配置”）。
-3. **设置远程订阅 URL**：在“配置文件”页面，点击右上角“+”，输入下面的远程订阅 URL，点击下载。
-
-```
-https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_old.conf
-```
-
-4. **下载并应用简易跨服配置**：在“远程文件”中点击该 URL，选择“使用配置”，等待下载完毕后，即可看到“本地文件”中加载了本配置。
-5. **安装 MitM 证书**：从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑配置”，进入“HTTPS 解密”，点击“证书授权”部分的“密码”右侧的ⓘ，在弹出的“证书”窗口中点击“生成新的 CA 证书”，成功生成证书后，再点击“安装根证书”，允许下载配置描述文件，前往系统的“设置”→“通用”→“描述文件与设备管理”中安装该证书。
-6. **信任 MitM 证书**：在系统的“设置”→“通用”→“关于本机”→“证书信任设置”中信任该证书；然后返回 Shadowrocket 的“HTTPS 解密”页面。
-7. **启用 HTTPS 解密**：打开“HTTPS 解密”的开关，点击右上角的“✓”保存设置；然后返回 Shadowrocket 的首页。
-8. **启动 Shadowrocket**：返回 Shadowrocket 的首页，打开 Shadowrocket 的连接开关，然后在清除了游戏后台的情况下进入游戏，即可实现跨服。（如无其他使用需求，不玩游戏时别忘了停止 Shadowrocket。）
-
-#### 方法二：手动写入当前使用中配置
-
-1. **进入配置编辑界面**：在“配置文件”页面，从“本地文件”中找到当前正在使用的配置，点击它，在弹出的列表中选择“编辑纯文本”。
-2. **添加跨服配置**：在弹出的编辑窗口中，将以下配置中 `[Script]` 及 `[MITM]` 下方的代码，在配置文件中分别找到对应位置复制进去，然后点击右上角的“保存”，返回 Shadowrocket 的首页。
-
-```
-[Script]
-# 少女前线 跨安卓官服
-## 切换服务器
-gfcn_ios2gw_old = type=http-request,script-path=https://github.com/Mornwind/GFCN_SwitchServer/raw/master/Shadowrkt/gfcn_ios2gw_old.js,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,max-size=1048576,requires-body=true,enable=true
 
 [MITM]
 enable = true
