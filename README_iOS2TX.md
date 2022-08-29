@@ -218,15 +218,20 @@ hostname = gfcn-transit.ios.sunborngame.com
 
 ### ⑷ Quantumult X
 
-由于 **Quantumult X 为外部设备提供服务的 HTTP 代理模块没有数据分析功能，只有纯粹的代理功能**（开发者原话），所以目前无法在 Quantumult X 中直接实现获取账号登录信息。
+> 由于 **Quantumult X 为外部设备提供服务的 HTTP 代理模块没有数据分析功能，只有纯粹的代理功能**（开发者原话），所以目前无法在 Quantumult X 中直接实现获取账号登录信息。**故暂不推荐此方法。**
+
+<details>
+<summary>点击查看：补充说明</summary>
 
 想要获取账号登录信息，请考虑借助以下工具：
 
-- 安卓上的 Http Canary
+- 安卓上的 HttpCanary
 
 - PC 上的 Fiddler 或 Charles
 
 - iOS 上的其他几款网络工具（如本教程中介绍过的几款；另外也包括 Charles）
+
+</details>
 
 ### ⑸ Surge 4
 
