@@ -18,10 +18,14 @@
 
 - **参考&协助**
   - 霞ヶ丘詩羽x / 浪速の白雪姬：[GitHub](https://gitee.com/KasumigaokaUtaha) / [Gitee](https://gitee.com/silvercrowsaki) / [Bilibili](https://space.bilibili.com/455501) / [NGA](https://bbs.nga.cn/thread.php?authorid=42650362)
-    - B 站专栏：[少女前线 跨服 iOS安卓国服（cv3630717）](https://www.bilibili.com/read/cv3630717)
-    - B 站专栏：[少前B服（散爆）iOS 跨服（cv3677605）](https://www.bilibili.com/read/cv3677605)（专栏文章已被 B 站删除）
+    - 📖 B 站专栏：[少女前线 跨服 iOS安卓国服（cv3630717）](https://www.bilibili.com/read/cv3630717)
+    - 📖 B 站专栏：[少前B服（散爆）iOS 跨服（cv3677605）](https://www.bilibili.com/read/cv3677605)（专栏文章已被 B 站删除）
   - LNarga / MoonNarga：[GitHub](https://github.com/MoonNarga)
-    - GitHub：[Server_Switch_for_GirlsFrontline](https://github.com/MoonNarga/Server_Switch_for_GirlsFrontline)
+    - 📖 GitHub：[Server_Switch_for_GirlsFrontline](https://github.com/MoonNarga/Server_Switch_for_GirlsFrontline)
+  - AW_BHDsar_cool：[NGA](https://bbs.nga.cn/thread.php?authorid=14088830)
+    - 📖 NGA 帖子：[[新版本]用于安卓模拟器登录IOS的教程(不保证对每个人都有效)](https://bbs.nga.cn/read.php?tid=33229577)
+  - Meow 老师：[NGA](https://bbs.nga.cn/thread.php?authorid=61496906)
+    - 📖 NGA 帖子：[[新版本] 提供一个3.0版本[安卓手机等设备]登录ios服的思路教程(需root)](https://bbs.nga.cn/read.php?tid=33239934)
 
 ---
 
@@ -38,7 +42,7 @@
 ### ⑴ HttpCanary
  > 需 HttpCanary 为新版 3.3.6 (58) 或旧版 9.2.8.1 (916) 的高级（Premium）版本。
  > 
- > 因少前 3.0 大版本更新后，安全措施升级，跨服时需用到 HTTPS 解密，故使用 HttpCanary 时需先**安装 HttpCanary 根证书**；安装证书时，对于 Android 7.0 以下系统可**无需 Root**，但对于 Android 7.0 及以上系统，由于证书方面的安全策略，导致**需 Root**后**手动将用户证书转为系统证书**才可正常进行跨服。
+ > ⚠️ 因少前 3.0 大版本更新后，安全措施升级，跨服时需用到 HTTPS 解密，故使用 HttpCanary 时需先**安装 HttpCanary 根证书**；安装证书时，对于 Android 7.0 以下系统可**无需 Root**，但对于 Android 7.0 及以上系统，由于证书方面的安全策略，导致**需 Root**后**手动将用户证书转为系统证书**才可正常进行跨服。
  > 
  > 另注：开发者已主动下架此应用基础版及高级版，只能通过其他途径获取。
 
