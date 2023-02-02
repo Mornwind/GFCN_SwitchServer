@@ -1,0 +1,12 @@
+#!name=「少女前线」跨服（iOS 端 → 安卓官服）
+#!desc=通过“脚本法”，进行「少女前线」跨服。可在 iOS 端上登录安卓官服。
+#!system=ios
+
+[Script]
+# 少女前线 跨安卓官服
+## 切换服务器
+gfcn_ios2gw = type=http-request,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.fastgit.org/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2gw.js,requires-body=1
+
+[MITM]
+enable = true
+hostname = gfcn-transit.ios.sunborngame.com

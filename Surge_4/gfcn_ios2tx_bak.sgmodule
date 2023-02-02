@@ -1,0 +1,22 @@
+#!name=「少女前线」跨服（iOS 端 → 应用宝服）
+#!desc=通过“脚本法”，进行「少女前线」跨服。可在 iOS 端上登录应用宝服。
+#!system=ios
+
+[General]
+# ---(Wi-Fi 访问)---
+allow-wifi-access = true
+wifi-access-http-port = 6152
+wifi-access-socks5-port = 6153
+
+[Script]
+# 少女前线 跨应用宝服
+## 获取帐号数据
+gfcn_ios2tx_GetToken = type=http-response,pattern=^https?:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,script-path=https://raw.fastgit.org/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2tx_GetToken.js,requires-body=1
+## 切换服务器
+gfcn_ios2tx_P1 = type=http-request,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.fastgit.org/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2tx_P1.js,requires-body=1
+## 写入帐号数据
+gfcn_ios2tx_P2 = type=http-request,pattern=^https?:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue,script-path=https://raw.fastgit.org/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2tx_P2.js,requires-body=1
+
+[MITM]
+enable = true
+hostname = gfcn-transit.ios.sunborngame.com
