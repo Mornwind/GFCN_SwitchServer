@@ -1,11 +1,9 @@
 # 「少女前线」跨服手册（散爆版）（前言）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
- > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)（博客中也有教程，使用的是国内备用仓库）
+ > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)（博客教程中链接均改用 FastGit 镜像，便于国内用户访问）
  > 
  > GitHub Repo: [Mornwind/GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
- > 
- > Gitee Repo: [Mornwind/GFCN_SwitchServer](https://gitee.com/Mornwind/GFCN_SwitchServer) (国内备用仓库，配置中链接已全部替换成 gitee.com，防止国内无法访问 GitHub)
  > 
  > QQ Group：
  > > 【霞之丘 · 少前跨服】:[`915089623`](https://jq.qq.com/?_wv=1027&k=5rnvPAT)（本群已于 2021/8/12 10:59 被封，损失惨重，故新群拆分成两个，分别运作）
@@ -30,22 +28,25 @@
 1. 本项目内所提到的所有客户端与服务器，均为**国服**。
 2. 跨服脚本代码**公开透明**地存放于本项目中，欢迎随时进行检查。跨服脚本中**并未含有**用于修改游戏内数据以获得不正当收益的作弊内容，只是用来切换登录服务器。但从原则上来说还是属于违反用户协议的行为，会不会被封号要看官方的心情。如若不放心，还请另寻他法（但是跨服的原理都是一样的，要真查起来都跑不掉）。
 3. **无法进行跨服充值，否则 1000% 会错充进客户端对应的原服务器，切记！**
-4. iOS 端跨渠道混服由于人数过少，无法保证跨服配置对所有渠道服有效，有问题请及时反馈。
+4. 自2022年9月29日例行维护后，“指挥官可使用安卓官网版本登录iOS 0服，也可使用iOS版本登录安卓官网 0服，请有需要的指挥官通过服务器列表切换对应服务器登录。”（摘自官网“[少女前线9月29日例行维护公告](https://gf-cn.sunborngame.com/NewsInfo?id=6549)”）
+5. iOS 端跨渠道混服由于人数过少，无法保证跨服配置对所有渠道服有效，有问题请及时反馈。
 
 ---
 
 ## 📖 跨服手册 📖
 
-| 代号 | 客户端 | 账号服务器 | 跨服教程 |
-| :-: | :-: | :-: | :-: |
-| iOS2GW | iOS 端 | 安卓官服 | [文字教程](/README_iOS2GW.md) |
-| iOS2Bili | iOS 端 | Bilibili 服 | [文字教程](/README_iOS2Bili.md) |
-| iOS2TX | iOS 端 | 应用宝服 | [文字教程](/README_iOS2TX.md) |
-| iOS2HF | iOS 端 | 渠道混服 | [文字教程](/README_iOS2HF.md) |
-| Adr2iOS | 安卓端 | iOS 官服 | [文字教程](/README_Adr2iOS.md) |
-| AdrEmu2iOS | 安卓模拟器 | iOS 官服 | [文字教程](/README_AdrEmu2iOS.md) |
+ > 注1：代号中的“X2Y”可理解为“将X客户端上的登录X服切换为登录Y服”，简记为“在X端登录Y服”。
+ >
+ > 注2：自2022年9月29日例行维护后，“指挥官可使用安卓官网版本登录iOS 0服，也可使用iOS版本登录安卓官网 0服，请有需要的指挥官通过服务器列表切换对应服务器登录。”（摘自官网“[少女前线9月29日例行维护公告](https://gf-cn.sunborngame.com/NewsInfo?id=6549)”）
 
-注：上述代号中的“X2Y”可理解为“将X客户端上的登录X服切换为登录Y服”，简记为“在X端登录Y服”。
+| 代号 | 客户端 | 账号服务器 | 有效性 | 传送门 |
+| :-: | :-: | :-: | :-: | :-: |
+| iOS2GW | iOS 端 | 安卓官服 | ❌游戏内已自带 | [文字教程（已弃用，仅作留念）](/README_iOS2GW.md) |
+| iOS2Bili | iOS 端 | Bilibili 服 | ✅可用 | [文字教程](/README_iOS2Bili.md) |
+| iOS2TX | iOS 端 | 应用宝服 | ✅可用 | [文字教程](/README_iOS2TX.md) |
+| iOS2HF | iOS 端 | 渠道混服 | ✅可用 | [文字教程](/README_iOS2HF.md) |
+| Adr2iOS | 安卓端 | iOS 官服 | ❌游戏内已自带 | [文字教程（已弃用，仅作留念）](/README_Adr2iOS.md) |
+| AdrEmu2iOS | 安卓模拟器 | iOS 官服 | ❌游戏内已自带 | [文字教程（已弃用，仅作留念）](/README_AdrEmu2iOS.md) |
 
 ---
 

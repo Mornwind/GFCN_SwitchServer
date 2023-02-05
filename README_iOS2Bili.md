@@ -1,11 +1,9 @@
 # 「少女前线」跨服手册（散爆版）（iOS 端 → Bilibili 服）
  > By: [Mornwind](https://github.com/Mornwind)
  > 
- > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)（博客中也有教程，使用的是国内备用仓库）
+ > Blog: [Mornwind’s Blog](https://blog.mornwind.cc)（博客教程中链接均改用 FastGit 镜像，便于国内用户访问）
  > 
  > GitHub Repo: [Mornwind/GFCN_SwitchServer](https://github.com/Mornwind/GFCN_SwitchServer) 
- > 
- > Gitee Repo: [Mornwind/GFCN_SwitchServer](https://gitee.com/Mornwind/GFCN_SwitchServer) (国内备用仓库，配置中链接已全部替换成 gitee.com，防止国内无法访问 GitHub)
  > 
  > QQ Group：
  > > 【霞之丘 · 少前跨服】:[`915089623`](https://jq.qq.com/?_wv=1027&k=5rnvPAT)（本群已于 2021/8/12 10:59 被封，损失惨重，故新群拆分成两个，分别运作）
