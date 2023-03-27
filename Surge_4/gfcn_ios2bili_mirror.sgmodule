@@ -13,7 +13,7 @@ wifi-access-socks5-port = 6153
 ## 获取帐号数据
 gfcn_ios2bili_GetToken = type=http-response,pattern=^https?:\/\/gfcn-passport\.(.+?)\.sunborngame\.com\/third\/channelLogin,script-path=https://raw.gitmirror.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2bili_GetToken.js,requires-body=1
 ## 切换服务器
-gfcn_ios2bili_P1 = type=http-request,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.gitmirror.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2bili_P1.js,requires-body=1
+gfcn_ios2bili_P1 = type=http-request,pattern=^https?:\/\/gfcn-transit\.ios\.sunborngame\.com\/index\.php,script-path=https://raw.gitmirror.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2bili_P1_30100.js,requires-body=1
 ## 写入帐号数据
 gfcn_ios2bili_P2 = type=http-request,pattern=^https?:\/\/gfcn-game\.(.+?)\.sunborngame\.com\/index\.php\/(.+?)\/Index\/getUidEnMicaQueue,script-path=https://raw.gitmirror.com/Mornwind/GFCN_SwitchServer/master/Surge_4/gfcn_ios2bili_P2.js,requires-body=1
 
